@@ -1,0 +1,189 @@
+<div class="navbar-mov">
+  <img src="src/img/logo-hor.png" alt="logo">
+  <a id="btn-menu" class="btn-menu">
+    <i class="bi bi-list"></i>
+  </a>
+  <a id="btn-close" class="btn-menu btn-menu-close" style="display: none;">
+    <i class="bi bi-x-lg"></i>
+  </a>
+  <div class="menu-desktop">
+    <a href="" class="overlay-item">Inicio</a>
+    <a href="" class="overlay-item">Conóceme</a>
+    <a href="" class="overlay-item">Servicios</a>
+    <a href="" class="overlay-item">Testimonios</a>
+    <a href="" class="overlay-item">Ubicación</a>
+    <button><a href="">Contacto</a></button>
+  </div>
+</div>
+<div class="overlay-menu" id="overlay-menu">
+  <a href="" class="overlay-item">Inicio</a>
+  <a href="" class="overlay-item">Conóceme</a>
+  <a href="" class="overlay-item">Servicios</a>
+  <a href="" class="overlay-item">Testimonios</a>
+  <a href="" class="overlay-item">Ubicación</a>
+  <a href="" class="overlay-item">Contacto</a>
+  <div class="rs">
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-instagram"></i>
+  </div>
+</div>
+
+<!--Estilos-->
+<style>
+  .navbar-mov {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(164,204,196,0.5);
+  }
+  .navbar-mov img {
+    max-width: 220px;
+    margin-left: 5%;
+  }
+  .btn-menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--rosa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    text-align: center;
+  }
+  .btn-menu-close  {
+    background-color: var(--morado);
+  }
+  .btn-menu i {
+    font-size: 35px;
+    color: white;
+  }
+  .overlay-menu {
+    position: fixed;
+    background-color: rgba(164,204,196,0.9);
+    top: 100px;
+    right: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 99;
+    transition: all 0.5s ease 0s;
+  }
+  .overlay-menu .overlay-item {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+  }
+  .overlay-menu .rs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .overlay-menu .rs .bi-facebook {
+    margin-right: 15px;
+    color: blue;
+    font-size: 35px;
+  }
+  .overlay-menu .rs .bi-instagram {
+    color: var(--rosa);
+    font-size: 35px;
+  }
+  .menu-desktop {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu-desktop .overlay-item {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  .menu-desktop button a {
+    text-decoration: none;
+    color: black;
+  }
+  .menu-desktop button {
+    border-style: none;
+    background-color: var(--rosa);
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+  }
+  .menu-desktop button:hover {
+    background-color: var(--morado);
+    transition: all 0.5s linear;
+  }
+  .menu-desktop .overlay-item:hover {
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    background-color: var(--rosa-claro);
+    border-radius: 10px;
+  }
+  /*Media query's */
+  @media (min-width: 425px) {
+    .navbar-mov img {
+      max-width: 300px;
+    }
+  }
+  @media (min-width: 768px) {
+    .menu-desktop {
+      display: flex;
+    }
+    .btn-menu, .btn-menu-close {
+      display: none;
+    }
+    .navbar-mov img {
+      margin-left: 10px;
+      max-width: 230px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .menu-desktop {
+      width: 700px;
+      justify-content: space-evenly;
+    }
+    .menu-desktop .overlay-item {
+      font-size: 20px;
+    }
+    .menu-desktop button a {
+      font-size: 20px;
+    }
+    .menu-desktop button {
+      padding: 10px 15px 10px 15px;
+      border-radius: 20px;
+      transition: all 0.5s linear;
+    }
+    .navbar-mov {
+      justify-content: space-between;
+    }
+    .navbar-mov img {
+      max-width: 340px;
+      margin-left: 10px;
+    }
+  }
+</style>
+
+<!--Scripts-->
+<script>
+  const open = document.getElementById("btn-menu");
+  open.addEventListener('click', openMenu);
+  const close = document.getElementById("btn-close");
+  close.addEventListener('click', closeMenu);
+  function openMenu() {
+    document.getElementById("overlay-menu").style.width = "100%";
+    document.getElementById("btn-menu").style.display = "none";
+    document.getElementById("btn-close").style.display = "block";
+  }
+  function closeMenu() {
+    document.getElementById("overlay-menu").style.width = "0";
+    document.getElementById("btn-menu").style.display = "block";
+    document.getElementById("btn-close").style.display = "none";
+  }
+</script>

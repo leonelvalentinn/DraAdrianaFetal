@@ -1,0 +1,94 @@
+<div class="title">
+  <h2 style="color: var(--morado-title); text-align: center;">SERVICIOS</h2>
+  <hr class="subrayado">
+</div>
+<section class="servicios">
+  <div class="container-grid">
+    <div class="item-servicio">
+      <h3>Ultrasonidos Especializados</h3>
+      <img src="src/img/ultrasonido.jpg" alt="">
+      <a href=""><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio">
+      <h3>Duo Test</h3>
+      <img src="src/img/prueba.jpg" alt="">
+      <a href=""><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio">
+      <h3>Seguimiento del Embarazo</h3>
+      <img src="src/img/control-prenatal.jpg" alt="">
+      <a href=""><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio">
+      <h3>Métodos de Planificación Familiar</h3>
+      <img src="src/img/planificacion.jpg" alt="">
+      <a href=""><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio">
+      <h3>Procedimientos</h3>
+      <img src="src/img/procedimientos.jpg" alt="">
+      <a href=""><button>Conoce más</button></a>
+    </div>
+  </div>
+</section>
+
+<!--Estilos -->
+<style>
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+    background-color: rgba(144, 212, 198, 0.719);
+  }
+  .servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 6%;
+    background-color: rgba(144, 212, 198, 0.719);
+  }
+  .servicios .container-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+  }
+  .servicios .container-grid .item-servicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border: solid 3px var(--rosa);
+    border-radius: 40px;
+  }
+  .subrayado {
+    border: 2px solid;
+    width: 70%;
+    color: blueviolet;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .servicios .container-grid .item-servicio h3, .servicios .container-grid .item-servicio h2 {
+    color: var(--morado-title);
+    text-align: center;
+  }
+  .servicios .container-grid .item-servicio img {
+    width: 100%;
+    margin: 15px 0 35px 0;
+    border-radius: 40px;
+  }
+  .servicios .container-grid .item-servicio button {
+    padding: 12px 16px;
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--rosa);
+  }
+  .servicios .container-grid .item-servicio button:hover {
+    background-color: var(--morado);
+    transition: all 0.3s ease-in-out;
+  }
+</style>

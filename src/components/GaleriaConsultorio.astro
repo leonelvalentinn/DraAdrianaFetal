@@ -1,0 +1,69 @@
+<div class="title">
+  <h2>CONOCE NUESTRAS INSTALACIONES</h2>
+  <hr class="subrayado">
+  <p>Contamos con las mejores instalaciones y el equipo más especializado, todo para brindarte la mejor atención y acompañarte en cada momento de esta hermosa etapa.</p>
+</div>
+<section class="instalaciones">
+  <div class="container-grid">
+    <div class="item-galeria">
+      <img src="src/img/instalacion.jpg" alt="">
+    </div>
+    <div class="item-galeria">
+      <img src="src/img/instalacion-2.jpg" alt="">
+    </div>
+    <div class="item-galeria">
+      <img src="src/img/instalacion-3.jpg" alt="">
+    </div>
+    <div class="item-galeria">
+      <img src="src/img/instalacion-4.jpg" alt="">
+    </div>
+    <div class="item-galeria">
+      <img src="src/img/instalacion-6.jpg" alt="">
+    </div>
+    <div class="item-galeria">
+      <img src="src/img/instalacion-5.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!--Estilos -->
+<style>
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .title h2 {
+    color: var(--morado-title);
+    text-align: center;
+  }
+  .title p {
+    padding: 10px 6%;
+    text-align: justify;
+  }
+  .subrayado {
+    border: 2px solid;
+    width: 70%;
+    color: blueviolet;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .instalaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 6%;
+  }
+  .instalaciones .container-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .instalaciones .container-grid .item-galeria img {
+    width: 100%;
+    margin: 15px 0 15px 0;
+    border-radius: 40px;
+  }
+</style>

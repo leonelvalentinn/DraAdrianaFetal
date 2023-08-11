@@ -62,8 +62,27 @@
     gap: 10px;
   }
   .instalaciones .container-grid .item-galeria img {
-    width: 100%;
+    width: 100%;        /*Estilos normales de la imagen*/
     margin: 15px 0 15px 0;
     border-radius: 40px;
+    height: auto;
+
+    view-timeline-name: --image;       /* Este es el nombre enlazado al scroll para revisar si se mueve*/
+    view-timeline-axis: block;        /* este dice que eje va a mirar block (vertical) o inline(horizontal)*/
+    animation-timeline: --image;      /* Enlace entre el scroll y el elemento con el nomnbre del timeline */
+    animation-name: show;             /* NOmbre de la animacion que vamos a usar */
+    animation-range: entry 25% cover 45%; /* usamos esta para cambiar el rango de cuando debe empezar la animación (entry) y que termine la animacion cuando le indiquemos (cover) */
+    animation-fill-mode: both;         /* Se utiliza para decir que la animacion se haga en los dos sentidos, modo en el que debe de rellenar */
+  }
+  @keyframes show {   /*Animacion de la imagen primero es transparente al25}% del tamaño y va creciendo */
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+    
   }
 </style>

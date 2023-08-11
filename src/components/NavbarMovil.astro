@@ -126,6 +126,17 @@
     background-color: var(--rosa-claro);
     border-radius: 10px;
   }
+  /*Keyframes */
+  @keyframes open {   /*Animacion de la imagen primero es transparente al25}% del tamaño y va creciendo */
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
   /*Media query's */
   @media (min-width: 425px) {
     .navbar-mov img {
@@ -171,7 +182,7 @@
   @media (min-width: 1100px) {
     .navbar-mov {
       padding: 0 30px 0 30px;
-    }
+    } 
   }
 </style>
 
@@ -185,10 +196,12 @@
     document.getElementById("overlay-menu").style.width = "100%";
     document.getElementById("btn-menu").style.display = "none";
     document.getElementById("btn-close").style.display = "block";
+    document.getElementById("btn-close").style.animation = "open 0.5s ease-in-out";
   }
   function closeMenu() {
     document.getElementById("overlay-menu").style.width = "0";
     document.getElementById("btn-menu").style.display = "block";
+    document.getElementById("btn-menu").style.animation = "open 0.5s ease-in-out";
     document.getElementById("btn-close").style.display = "none";
   }
 </script>

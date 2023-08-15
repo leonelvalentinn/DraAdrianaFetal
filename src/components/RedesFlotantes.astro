@@ -1,0 +1,45 @@
+<div class="redes-flotantes">
+  <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+  <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
+  <a href="" target="_blank"><i class="bi bi-whatsapp"></i></a>
+</div>
+
+<!--Estilos -->
+<style>
+  .redes-flotantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    right: 5px;
+  }
+  .redes-flotantes a {
+    text-decoration: none;
+  }
+  .redes-flotantes i {
+    width: 50px;
+    height: 50px;
+    background-color: var(--rosa);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .redes-flotantes i:hover {
+    background-color: var(--morado);
+    transition: all 0.3s ease-in-out;
+  }
+  @media (min-width: 768px) {
+    .redes-flotantes i {
+      width: 70px;
+      height: 70px;
+      font-size: 30px;
+    }
+  }
+</style>

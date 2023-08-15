@@ -1,20 +1,35 @@
 <section class="hero-container" id="inicio">
   <h2>MATERNO FETAL</h2>
   <hr class="subrayado">
-  <img src="src/img/foto-bb.jpg" alt="">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+  <div class="container-materno">
+    <img src="src/img/foto-bb.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+    </p>
+  </div>
   <div class="why">
     <h2>¿POR QUÉ SOMOS TU MEJOR OPCIÓN?</h2>
     <hr class="subrayado">
-    <img src="src/img/doctora.png" alt="">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-    <h3>Conóce más sobre mí</h3>
-    <a href="/Trayectoria">
-      <button>Ver más</button>
-    </a>
+    <div class="container-why">
+      <img src="src/img/doctora.png" alt="">
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+        <div class="conoce-des">
+          <h3>Conóce más sobre mí</h3>
+          <a href="/Trayectoria">
+            <button>Ver más</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="conoce-mov">
+      <h3>Conóce más sobre mí</h3>
+      <a href="/Trayectoria">
+        <button>Ver más</button>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -75,5 +90,47 @@
   .why button:hover {
     background-color: var(--morado);
     transition: all 0.3s ease-in-out;
+  }
+  .conoce-des, .conoce-mov {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .conoce-des {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .conoce-des {
+      display: flex;
+    }
+    .conoce-mov {
+      display: none;
+    }
+    .container-materno {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-container {
+      padding: 30px 6% 6% 6%;
+    }
+    .hero-container .container-materno img {
+      width: 50%;
+      margin-right: 25px;
+    }
+    .hero-container p {
+      font-size: 1.1em;
+    }
+    .hero-container .container-why img {
+      width: 50%;
+      margin-left: 25px;
+    }
+    .container-why {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row-reverse;
+    }
   }
 </style>

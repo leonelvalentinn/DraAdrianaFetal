@@ -4,27 +4,34 @@
 </div>
 <section class="servicios">
   <div class="container-grid">
-    <div class="item-servicio">
+    <div class="item-servicio parte-1">
       <h3>Ultrasonidos Especializados</h3>
       <img src="src/img/ultrasonido.jpg" alt="">
+      <ul class="container-ultrasonidos">
+        <a href=""><li><i class="bi bi-heart-fill"></i> USG de menos de 11 semanas <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> USG Genético primer trimestre 11-14 sdg <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> USG estructural segundo trimestre 18-24 sdg <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> USG crecimiento <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> Ultrasonido Doppler <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> Ultrasonidos de embarazos gemelares <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> USG 3D <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> USG 4D <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> USG 5D <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+        <a href=""><li><i class="bi bi-heart-fill"></i> Revelación de sexo fetal <img style="width: 60px;" src="src/img/ultrasonido2.jpg" alt=""></li></a>
+      </ul>
       <a href=""><button>Conoce más</button></a>
     </div>
-    <div class="item-servicio">
+    <div class="item-servicio parte-2">
       <h3>Duo Test</h3>
       <img src="src/img/prueba.jpg" alt="">
       <a href=""><button>Conoce más</button></a>
     </div>
-    <div class="item-servicio">
+    <div class="item-servicio parte-3">
       <h3>Seguimiento del Embarazo</h3>
       <img src="src/img/control-prenatal.jpg" alt="">
       <a href=""><button>Conoce más</button></a>
     </div>
-    <div class="item-servicio">
-      <h3>Métodos de Planificación Familiar</h3>
-      <img src="src/img/planificacion.jpg" alt="">
-      <a href=""><button>Conoce más</button></a>
-    </div>
-    <div class="item-servicio">
+    <div class="item-servicio parte-4">
       <h3>Procedimientos</h3>
       <img src="src/img/procedimientos.jpg" alt="">
       <a href=""><button>Conoce más</button></a>
@@ -90,5 +97,22 @@
   .servicios .container-grid .item-servicio button:hover {
     background-color: var(--morado);
     transition: all 0.3s ease-in-out;
+  }
+  .container-ultrasonidos {
+    list-style: none;
+    padding-left: 0;
+  }
+  .container-ultrasonidos a {
+    text-decoration: none;
+  }
+  .container-ultrasonidos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .container-ultrasonidos li i{
+    color: palevioletred;
+    font-size: 25px;
+    margin-right: 10px;
   }
 </style>

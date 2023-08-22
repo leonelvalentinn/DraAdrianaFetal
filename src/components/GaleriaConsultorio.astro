@@ -5,22 +5,22 @@
 </div>
 <section class="instalaciones">
   <div class="container-grid">
-    <div class="item-galeria">
-      <img src="src/img/instalacion.jpg" alt="">
-    </div>
-    <div class="item-galeria">
+    <div class="item-galeria item-1">
       <img src="src/img/instalacion-2.jpg" alt="">
     </div>
-    <div class="item-galeria">
+    <div class="item-galeria item-2">
+      <img src="src/img/instalacion.jpg" alt="">
+    </div>
+    <div class="item-galeria item-3">
       <img src="src/img/instalacion-3.jpg" alt="">
     </div>
-    <div class="item-galeria">
+    <div class="item-galeria item-4">
       <img src="src/img/instalacion-4.jpg" alt="">
     </div>
-    <div class="item-galeria">
+    <div class="item-galeria item-5">
       <img src="src/img/instalacion-6.jpg" alt="">
     </div>
-    <div class="item-galeria">
+    <div class="item-galeria item-6">
       <img src="src/img/instalacion-5.jpg" alt="">
     </div>
   </div>
@@ -58,14 +58,22 @@
   }
   .instalaciones .container-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+  .instalaciones .container-grid .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .instalaciones .container-grid .item-6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
   .instalaciones .container-grid .item-galeria img {
     width: 100%;        /*Estilos normales de la imagen*/
     margin: 15px 0 15px 0;
     border-radius: 40px;
-    height: auto;
+    height: -webkit-fill-available;
 
     view-timeline-name: --image;       /* Este es el nombre enlazado al scroll para revisar si se mueve*/
     view-timeline-axis: block;        /* este dice que eje va a mirar block (vertical) o inline(horizontal)*/
@@ -84,5 +92,35 @@
       scale: 100%;
     }
     
+  }
+  @media (min-width: 768px) {
+    .instalaciones .container-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .instalaciones .container-grid .item-galeria img {
+      height: -webkit-fill-available;
+    }
+    .instalaciones .container-grid .item-1 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    .instalaciones .container-grid .item-2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .instalaciones .container-grid .item-3 {
+      
+    }
+    .instalaciones .container-grid .item-4 {
+      
+    }
+    .instalaciones .container-grid .item-5 {
+      
+    }
+    .instalaciones .container-grid .item-6 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
   }
 </style>

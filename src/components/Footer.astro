@@ -9,10 +9,12 @@
       <a href=""><h4>Contacto</h4></a>
     </div>
     <div class="footer-up">
-      <h4>Certificada por:</h4>
-      <div class="certificados">
-        <img src="src/img/logo-comego.png" alt="">
-        <img src="src/img/fetal-foundation.png" alt="">
+      <div>
+        <h4>Certificada por:</h4>
+        <div class="certificados">
+          <img src="src/img/logo-comego.png" alt="">
+          <img src="src/img/fetal-foundation.png" alt="">
+        </div>
       </div>
       <div class="pago">
         <h4>Formas de pago:</h4>
@@ -141,5 +143,27 @@
     width: 50px;
     height: 35px;
   }
-  
+  @media (min-width: 768px) {
+    .footer-up {
+      flex-direction: row;
+    }
+    .items-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .items-text a {
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    .items-text a:hover {
+      transition: all 0.3s ease-in-out;
+      padding: 10px;
+      background-color: var(--rosa-claro);
+      border-radius: 10px;
+    }
+    .items-text h4 {
+      margin-bottom: 0;
+    }
+  }
 </style>

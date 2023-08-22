@@ -1,0 +1,178 @@
+<section class="cv-container">
+  <h2>MI TRAYECTORIA</h2>
+  <hr class="subrayado">
+  <div class="container-txt">
+    <img class="img-hero" src="src/img/doc-2.jpg" alt="">
+    <div>
+      <p>Hola, soy la <strong>Dra. Janeth Adriana García Cid</strong>, cuento con más de 8 años de 
+        formación académica dentro de la rama de la medicina y más de 4 años de 
+        experiencia en la subespecualidad materno fetal. </p>
+    </div>
+  </div>
+  <div class="conoce-des">
+    <h3>CERTIFICACIONES</h3>
+    <div class="cedulas">
+      <div class="item-cedulas">
+        <img src="src/img/logos/logo-uaeh.jpg" alt="">
+        <div class="txt-cedula">
+          <p>Universidad Autónoma del Estado de Hidalgo</p>
+          <p>Médico Cirujano</p>
+          <p><strong>No. de cédula: 12345678</strong></p>
+        </div>
+      </div>
+      <div class="item-cedulas">
+        <div>
+          <img src="src/img/logos/logo-unam.jpg" alt="">
+          <img src="src/img/logos/logo-hospital.png" alt="">
+        </div>
+        <div class="txt-cedula">
+          <p>Universidad Nacional Autónoma de México</p>
+          <p>Hospital General de México “Dr Eduardo Liceaga”</p>
+          <p>Ginecología y Obstetricia</p>
+          <p><strong>No. de cédula: 12345678</strong></p>
+        </div>
+      </div>
+      <div class="item-cedulas">
+        <div>
+          <img src="src/img/logos/logo-unam.jpg" alt="">
+          <img src="src/img/logos/INPer_logo.jpg" alt="">
+        </div>
+        <div class="txt-cedula">
+          <p>Universidad Nacional Autónoma de México</p>
+          <p>Instituto Nacional de Perinatología INPer</p>
+          <p>Subespecialidad en Medicina Materno Fetal</p>
+          <p><strong>No. de cédula: 12345678</strong></p>
+        </div> 
+      </div>
+      <div class="item-cedulas">
+        <img src="src/img/logo-comego.png" alt="">
+        <div class="txt-cedula">
+          <p>Consejo Mexicano de Ginecología y Obstetricia</p>
+          <p>Ginecología y Obstetricia</p>
+          <p><strong>No. de cédula: 12345678</strong></p>
+        </div>
+      </div>
+      <div class="item-cedulas parte-5">
+        <img src="src/img/fetal-foundation.png" alt="">
+        <div class="txt-cedula">
+          <p>The Fetal Medicine Foundation</p>
+          <p>Medicina Materno Fetal </p>
+          <p><strong>No. de cédula: 12345678</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Estilos -->
+<style>
+  .cv-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 6% 6% 6%;
+    flex-direction: column;
+  }
+  .subrayado {
+    border: 2px solid;
+    width: 70%;
+    color: blueviolet;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .cv-container h2, .cv-container h3 {
+    color: var(--morado-title);
+    text-align: center;
+  }
+  .cv-container h3 {
+    margin-top: 20px;
+  }
+  .cv-container img {
+    width: 100%;
+    margin: 15px 0 35px 0;
+  }
+  .cv-container .container-txt .img-hero {
+    border-radius: 40px;
+  }
+  .cv-container p {
+    text-align: justify;
+  }
+  .container-txt strong, .txt-cedula strong {
+    font-size: 17px;
+    color: var(--morado-title);
+  }
+  .cedulas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cedulas .item-cedulas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+  }
+  .cedulas .item-cedulas img {
+    width: 80px;
+    height: auto;
+  }
+  .txt-cedula {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .txt-cedula p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .img-des {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .cv-container p {
+      font-size: 1.4em;
+    }
+    .container-txt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cv-container img {
+      width: 40%;
+      margin: 15px 30px 35px 0;
+    }
+    .container-txt strong, .txt-cedula strong {
+      font-size: 1.4em;
+      color: var(--morado-title);
+    }
+    .img-des {
+      display: flex;
+    }
+    .img-mov {
+      display: none;
+    }
+    .cv-container h3 {
+      margin-top: 40px;
+    }
+    .cedulas {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(min-content, 600px));
+    }
+    .cedulas .item-cedulas img {
+      width: 100px;
+      margin: 0 0 30px 0;
+    }
+    .cedulas .parte-5 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .txt-cedula {
+      margin-right: 20px;
+      margin-left: 0;
+    }
+  }
+</style>

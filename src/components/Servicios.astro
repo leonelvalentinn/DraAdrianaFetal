@@ -75,7 +75,7 @@
 </section>
 <!--Estudios sanguineos-->
 <section class="servicios sanguineo">
-  <h3 class="sub-title">Procedimientos</h3>
+  <h3 class="sub-title">Estudios Sanguineos Especiales</h3>
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Duo Test</h3>
@@ -87,6 +87,36 @@
       <h3>ADN Fetal</h3>
       <img src="src/img/adn.jpg" alt="">
       <p>Conocer si existe la posibilidad de presentar alguna alteración genética fetal durante el embarazo a través de una muestra sanguínea materna.</p>
+      <a href=""><button>Conoce más</button></a>
+    </div>
+  </div>
+</section>
+<!--Seguimiento del embarazo -->
+<section class="servicios-procedimientos">
+  <h3 class="sub-title">Seguimiento del Embarazo</h3>
+  <div class="container-grid">
+    <div class="item-servicio parte-1">
+      <h3>Control Prenatal</h3>
+      <img src="src/img/servicios/control-prenatal.png" alt="">
+      <p></p>
+      <a href=""><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-2">
+      <h3>Embarazos de Bajo y Alto Riesgo</h3>
+      <img src="src/img/servicios/embarazo-riesgo.jpg" alt="">
+      <p></p>
+      <a href=""><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-3">
+      <h3>Atención de Parto</h3>
+      <img src="src/img/servicios/parto.jpg" alt="">
+      <p></p>
+      <a href=""><button>Conoce más</button></a>
+    </div>
+    <div class="item-servicio parte-4">
+      <h3>Cesárea</h3>
+      <img src="src/img/servicios/Cesarea.jpg" alt="">
+      <p></p>
       <a href=""><button>Conoce más</button></a>
     </div>
   </div>
@@ -214,5 +244,13 @@
   }
   .item-servicio p {
     text-align: justify;
+  }
+
+  /* Media querys */
+  @media (min-width: 768px) {
+    .servicios .container-grid, .servicios-procedimientos .container-grid {
+      grid-template-columns: repeat(2, minmax(200px, 400px));
+      gap: 40px;
+    }
   }
 </style>

@@ -9,18 +9,18 @@
   <div class="menu-desktop">
     <a href="/" class="overlay-item">Inicio</a>
     <a href="/Trayectoria" class="overlay-item">Conóceme</a>
-    <a href="/Servicios" class="overlay-item">Servicios</a>
+    <a href="/#servicios" class="overlay-item">Servicios</a>
     <a href="" class="overlay-item">Ginecología</a>
-    <a href="" class="overlay-item">Ubicación</a>
-    <button><a href="">Contacto</a></button>
+    <a href="#ubicacion" class="overlay-item">Ubicación</a>
+    <button><a href="tel:5514476308" target="_blank">Contacto</a></button>
   </div>
 </div>
 <div class="overlay-menu" id="overlay-menu">
   <a href="/" class="overlay-item">Inicio</a>
   <a href="/Trayectoria" class="overlay-item">Conóceme</a>
-  <a href="/Servicios" class="overlay-item">Servicios</a>
+  <a href="#servicios" class="overlay-item">Servicios</a>
   <a href="" class="overlay-item">Ginecología</a>
-  <a href="" class="overlay-item">Ubicación</a>
+  <a href="#ubicacion" class="overlay-item" id="btn-close-1">Ubicación</a>
   <a href="" class="overlay-item">Contacto</a>
   <div class="rs">
     <i class="bi bi-facebook"></i>
@@ -60,7 +60,7 @@
     color: white;
   }
   .overlay-menu {
-    position: fixed;
+    position: absolute;
     background-color: rgba(164,204,196,0.9);
     top: 100px;
     right: 0;
@@ -192,6 +192,8 @@
   open.addEventListener('click', openMenu);
   const close = document.getElementById("btn-close");
   close.addEventListener('click', closeMenu);
+  const closeM = document.getElementById("btn-close-1");
+  closeM.addEventListener('click', closeMenu);
   function openMenu() {
     document.getElementById("overlay-menu").style.width = "100%";
     document.getElementById("btn-menu").style.display = "none";

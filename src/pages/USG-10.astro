@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarMovil from '../components/NavbarMovil.astro'
+import Footer from '../components/Footer.astro';
+import Contacto from '../components/Contacto.astro';
+import Ubicacion from '../components/Ubicacion.astro';
+import RedesFlotantes from '../components/RedesFlotantes.astro';
+import Servicio from '../components/Servicio.astro';
+import Up from '../components/Up.astro';
+---
+
+<Layout title="Dra. Janeth Adriana García Cid">
+	<main id="inicio">
+		<NavbarMovil/>
+    <Servicio 
+      title='USG de Menos de 11 Semanas' 
+      href='1' 
+      img='src/img/servicios/usg-10semanas.jpg'
+      img2='src/img/servicio/usg-10/ultrasonido.jpg' 
+      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+      subtitle='¿Sintomas?' 
+      body2='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident' 
+      subtitle2='Más información'
+      info1='¿Cómo me preparo para este ultrasonido?'
+      info2='¿Cómo se realiza el procedimiento?'
+      img3='src/img/servicio/usg-10/ultrasonido.jpg'
+      img4='src/img/servicio/usg-10/ultrasonido.jpg'
+      infoDesplegable1='Para un estudio del hígado, la vesícula biliar, el bazo y el páncreas, es posible que se le solicite que ingiera alimentos sin grasa la noche antes al examen y luego que evite la ingesta de alimentos de 8 a 12 horas antes del examen.'
+      infoDesplegable2='Para un ultrasonido de los riñones, es posible que se le solicite que beba entre cuatro y seis vasos de líquido aproximadamente una hora antes del examen para llenar la vejiga. Posiblemente se le pida que evite ingerir alimentos de 8 a 12 horas antes del examen para evitar la acumulación de gases en los intestinos.'
+      infoDesplegable3='Para un ultrasonido de la aorta, es posible que deba evitar ingerir alimentos de 8 a 12 horas antes del examen.'
+      infoDesplegable4='la'
+      infoDesplegable5='le'
+      infoDesplegable6='li'
+      />
+    <Contacto/>
+		<Ubicacion/>
+		<RedesFlotantes/>
+    <Up />
+		<Footer/>
+	</main>
+</Layout>

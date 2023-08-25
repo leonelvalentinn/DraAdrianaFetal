@@ -76,6 +76,7 @@ const { href, title, body, body2, img, subtitle, subtitle2, img2, img3, img4, in
 
 <!-- Estilos -->
 <style>
+  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
   .hero-container {
     width: 100%;
     display: flex;
@@ -176,6 +177,15 @@ const { href, title, body, body2, img, subtitle, subtitle2, img2, img3, img4, in
   .container-desplegable li {
     margin-top: 10px;
   }
+  .container-desplegable ul {
+    list-style:none;
+  }
+  .container-desplegable li::before {
+    content: "\F415";
+    font-family: 'bootstrap-icons';
+    margin-right: 8px;
+    color: var(--rosa);
+  }
   .view {
     display: block;
     transition: all 0.3s ease-in-out;
@@ -224,7 +234,7 @@ const { href, title, body, body2, img, subtitle, subtitle2, img2, img3, img4, in
       margin-right: 25px;
     }
     .hero-container p {
-      font-size: 1.1em;
+      font-size: 1.3em;
     }
     .hero-container .container-why img {
       width: 50%;

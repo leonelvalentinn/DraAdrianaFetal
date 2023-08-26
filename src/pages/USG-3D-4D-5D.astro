@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarMovil from '../components/NavbarMovil.astro'
+import Footer from '../components/Footer.astro';
+import Ubicacion from '../components/Ubicacion.astro';
+import RedesFlotantes from '../components/RedesFlotantes.astro';
+import Servicio from '../components/Servicio.astro';
+import Up from '../components/Up.astro';
+import Contacto2 from '../components/Contacto2.astro';
+---
+
+<Layout title="Ultrasonido 3D, 4D, 5D - Dra. Janeth Adriana García Cid">
+	<main id="inicio">
+		<NavbarMovil/>
+    <Servicio 
+      title='Ultrasonido 3D, 4D, 5D' 
+      href='1' 
+      img='src/img/servicios/usg-5d.webp'
+      img2='src/img/servicio/usg-4d/ultrasonido-1.jpg' 
+      body='Estos ultrasonidos utilizan a tecnología de última vanguardia que nos permite definir de manera más clara características de tu bebé, sabemos lo importante que es para ti conocer la carita de tu bebé por lo que a través de esta tecnologías con ultrasonidos de ultima generación nos permitirá conocer de mejor manera las facciones de tu bebé, que estamos seguros te enamorarán.'
+      subtitle='¿En que me beneficia realizarme este ultrasonido?' 
+      body2='Nos permitirá obtener una imagen del feto más real, se trata de una imagen en tiempo real, es decir, es una prueba dinámica y no una imagen estática como una fotografía. Se puede congelar la imagen en la pantalla para su estudio, así como imprimir esta imagen en la impresora. Además, con esta tecnología podrás observar con detalle los rasgos de tu bebé.' 
+      subtitle2='Más información'
+      info1='¿Cómo me preparo para este ultrasonido?'
+      info2='¿Cómo se realiza el procedimiento?'
+      img3='src/img/servicio/usg-4d/ultrasonido-2.jpg'
+      img4='src/img/servicio/usg-4d/ultrasonido-3.jpg'
+      infoDesplegable1='No es necesario una preparación especial para realizar este estudio. En dado caso, el médico puede solicitar la toma de mucha agua antes de realizarlo, así como no vaciar por completo la vejiga, ya que esto puede hacer que las imágenes salgan de mejor manera.'
+      infoDesplegable2='Evita darte crema hidratante las 48/72 horas antes a tu ecografía 4D o 5D, sólo en el área abdominal inferior, que es la que necesita estar expuesta durante este procedimiento, por ello, le convendría llevar una vestimenta holgada, de dos piezas.'
+      infoDesplegable3='Generalmente no se sienten molestias debidas a la presión a medida que presionan el transductor contra el área que está siendo examinada. No obstante, si el área es sensible, usted podría sentir presión o un dolor leve debido al transductor.'
+      infoDesplegable4='Para realizar este ultrasonido usted yacerá acostado boca arriba en una mesa de examen que puede inclinarse o moverse. Los pacientes podrían tener que ponerse de costado para mejorar la calidad de las imágenes.'
+      infoDesplegable5='Ésta es una prueba totalmente indolora y muy rápida, ya que su duración ronda los 30 minutos. Además, no te pondrá en peligro ni a ti ni al bebé.'
+      infoDesplegable6='Una vez terminado el proceso de toma de imágenes, el tecnólogo limpiará el gel transparente de ultrasonido de su piel. Cualquier resto de gel que quede, se secará rápidamente. El gel de ultrasonido generalmente no mancha ni destiñe la ropa.'
+      />
+    <Contacto2 />
+		<Ubicacion/>
+		<RedesFlotantes/>
+    <Up />
+		<Footer/>
+	</main>
+</Layout>

@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarMovil from '../components/NavbarMovil.astro'
+import Footer from '../components/Footer.astro';
+import Ubicacion from '../components/Ubicacion.astro';
+import RedesFlotantes from '../components/RedesFlotantes.astro';
+import Servicio from '../components/Servicio.astro';
+import Up from '../components/Up.astro';
+import Contacto2 from '../components/Contacto2.astro';
+---
+
+<Layout title="Amniocentesis - Dra. Janeth Adriana García Cid">
+	<main id="inicio">
+		<NavbarMovil/>
+    <Servicio 
+      title='Amniocentesis' 
+      href='1' 
+      img='src/img/procedimientos.jpg'
+      img2='src/img/servicio/amniocentesis/amniocentesis-.jpg' 
+      body='Es una prueba que se realiza durante el embarazo para diagnosticar ciertos trastornos genéticos, defectos congénitos y otros problemas de salud en un feto. Por lo general, la prueba se realiza durante las semanas 15 y 20 del embarazo. Esta analiza una muestra de líquido amniótico. El líquido amniótico es una sustancia transparente o amarillenta que rodea y protege al feto durante el embarazo. Contiene células que entregan información importante sobre la salud del feto. La amniocentesis es una prueba de diagnóstico, es decir, indica si su bebé tiene un problema de salud específico.'
+      subtitle='¿En que me beneficia realizarme este procedimiento?' 
+      body2='Nos permitirá realizar estudios especiales para la determinación de algunas enfermedades de los cromosomas como síndrome de Dawn. También nos ayudará a determinar si hay alguna enfermedad infecciosa en el bebé, como por ejemplo toxoplasmosis. Para realizarlo se debe de tener una indicación muy clara. Deberá ser realizada solo por expertos como un médico materno fetal.' 
+      subtitle2='Más información'
+      info1='¿Cómo me preparo para una amniocentesis?'
+      info2='¿Cómo se realiza el procedimiento?'
+      img3='src/img/servicio/usg-10/ultrasonido2.webp'
+      img4='src/img/servicio/usg-4d/ultrasonido-3.jpg'
+      infoDesplegable1='No es necesario asistir en ayunas. Tampoco hace falta ir con la vejiga llena, como se hace para las ecografía ginecológicas, pues el líquido amniótico en sí ya permite que se vea bien la ecografía.'
+      infoDesplegable2='Sólo la parte inferior necesita estar expuesta durante este procedimiento, por ello, le convendría llevar una vestimenta holgada, de dos piezas. una amniocentesis suele durar unos 15-20 minutos, aunque la mayoría del tiempo se dedica a la ecografía que guía la punción, la cual dura menos de dos minutos.'
+      infoDesplegable3='Generalmente no se sienten molestias debidas a la presión a medida que presionan el transductor contra el área que está siendo examinada. No obstante, si el área es sensible, usted podría sentir presión o un dolor leve debido al transductor.'
+      infoDesplegable4='Durante la realización de la amniocentesis la paciente se tumba en una camilla boca arriba y se le descubre el abdomen. A continuación, se pone un gel especial en el abdomen que facilita la realización de una ecografía que ubicará al bebé en el útero y localizará el líquido amniótico a analizar.'
+      infoDesplegable5='Posteriormente, se limpia el abdomen con un antiséptico, tambiém se puede poner aplicar una sustancia anestésica en la zona de la punción, aunque no siempre se hace, pues la punción sólo resulta en algo incómodo, con un ligero ardor o calambre durante la extracción del líquido amniótico, pero eso es todo.'
+      infoDesplegable6='Se realiza la punción en el abdomen guiada por la ecografía y se extrae del útero una pequeña cantidad de líquido amniótico con una jeringa. La cantidad de líquido que se extrae depende del motivo de la realización de la prueba. En este proceso es importante que la embarazada evite moverse. Tras la extracción del líquido se retira la aguja y se pone un pequeño apósito en la zona de punción.'
+      />
+    <Contacto2 />
+		<Ubicacion/>
+		<RedesFlotantes/>
+    <Up />
+		<Footer/>
+	</main>
+</Layout>

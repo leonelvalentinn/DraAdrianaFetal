@@ -4,38 +4,33 @@ import NavbarMovil from '../components/NavbarMovil.astro'
 import Footer from '../components/Footer.astro';
 import Ubicacion from '../components/Ubicacion.astro';
 import RedesFlotantes from '../components/RedesFlotantes.astro';
-import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import parto from "../img/servicios/parto.jpg";
-import parto1 from "../img/servicio/parto/parto-1.jpg";
-import parto2 from "../img/servicio/parto/parto-2.jpg";
-import parto3 from "../img/servicio/parto/parto-3.jpg";
 ---
 
 <Layout title="Ginecología - Dra. Janeth Adriana García Cid">
 	<main id="inicio">
 		<NavbarMovil/>
-    <Servicio 
-      title='Ginecología' 
-      href='1' 
-      img={parto1}
-      img2={parto2}
-      body='El parto normal es el proceso fisiológico con el que la mujer finaliza su gestación a término (entre las 37 y las 42 semanas cumplidas). Su inicio es espontáneo, se desarrolla y finaliza sin complicaciones, culmina con el nacimiento de un bebé sano y no necesita más intervención. La mayoría de las mujeres sanas, con la atención y apoyo adecuados y con un mínimo de procedimientos médicos pueden dar a luz sin poner en riesgo su seguridad y la de los bebés. Para ello es importante que las mujeres tengan confianza en sus posibilidades de afrontar el parto y que las matronas y obstetras contribuyan a la mejor evolución de este proceso fisiológico.'
-      subtitle='El parto se compone de tres etapas principales:' 
-      body2='Primera etapa: periodo de dilatación (o trabajo de parto). Cuenta con dos fases, inicial y activa. Las contracciones provocan la dilatación gradual del cuello uterino, que se va haciendo más delgado hasta llegar a desaparecer (borramiento) y casi a confundirse con el resto del útero. Estos cambios permiten que el feto pase a la vagina. Segunda etapa: periodo de expulsión. Se trata del nacimiento del bebé. Tercera etapa: periodo de alumbramiento. Se trata de la expulsión de la placenta.' 
-      subtitle2='Más información'
-      info1='Señales de que se aproxima el parto'
-      info2='¿Qué incluye cada consulta de control prenatal?'
-      img3={parto3}
-      img4={parto}
-      infoDesplegable1='Romper Bolsa: Significa que se rompe la bolsa que contiene el líquido amniótico que rodea al bebé, produciendo la expulsión de este por la vagina. Es posible que se sienta un gran flujo o quizás uno más pequeño, pero se produce de manera espontánea, no se puede controlar como la orina, y aumenta con los movimientos.'
-      infoDesplegable2='Pérdida del tapón mucoso: Se produce cuando el cuello del útero comienza a dilatarse. El tapón mucoso es un flujo espeso y de color amarillo/café, a veces sanguinolento, cuyo objetivo es mantener sellado el cuello del útero durante las 40 semanas de embarazo para proteger al bebé de posibles infecciones.'
-      infoDesplegable3='Contracciones: Sin lugar a duda, es el síntoma más evidente de que el trabajo de parto se acerca. Las primeras contracciones se sienten como cólicos, es decir un suave dolor a lo largo del abdomen y este se pone duro, a veces acompañado de dolor de espalda. A medida que pasa el tiempo, la frecuencia es mayor y el intervalo entre cada contracción se hace más corto y probablemente más dolorosas. Si duran más de medio minuto y empiezan a ser más frecuentes y más fuertes, entonces es muy probable que se esté entrando en parto.'
-      infoDesplegable4='Evaluación de la historia clínica, peso materno, signos vitales.'
-      infoDesplegable5='Revisión de exámenes de laboratorio'
-      infoDesplegable6='Evaluación ultrasonográfica básica de tu bebé (evaluación del crecimiento y líquido amniótico)'
-      />
+    <div class="title-img">
+      <h2>Ginecología</h2>
+    </div>
+    <section class="container-ginecologia">
+      <h2>Métodos de Planificación Familiar</h2>
+      <hr class="subrayado">
+      <div class="container-planificacion">
+        
+      </div>
+      <h2>Colocación de Dispositivo Intrauterino</h2>
+      <hr class="subrayado">
+      <div class="container-planificacion">
+        
+      </div>
+      <h2>Colocación de Implante Subdérmico</h2>
+      <hr class="subrayado">
+      <div class="container-planificacion">
+        
+      </div>
+    </section>
     <Contacto2 />
 		<Ubicacion/>
 		<RedesFlotantes/>
@@ -43,3 +38,46 @@ import parto3 from "../img/servicio/parto/parto-3.jpg";
 		<Footer/>
 	</main>
 </Layout>
+
+<!-- Estilos -->
+<style>
+  .container-ginecologia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 6%;
+  }
+  .subrayado {
+    border: 2px solid;
+    width: 70%;
+    color: blueviolet;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .container-ginecologia h2 {
+    color: var(--morado-title);
+    text-align: center;
+  }
+  .title-img {
+    background-image: url(../img/servicio/ginecologia/ginecologia-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .title-img h2 {
+    margin-top: 40px;
+    font-size: 2.5em;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    color: black;
+  }
+</style>

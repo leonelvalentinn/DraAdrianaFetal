@@ -7,6 +7,10 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
+import usg10 from "../img/servicios/usg-10semanas.jpg";
+import usg1 from "../img/servicio/usg-10/embarazo.png";
+import USG2 from "../img/servicio/usg-10/ultrasonido.jpg";
+import usg3 from "../img/servicio/usg-10/ultrasonido2.webp";
 ---
 
 <Layout title="USG de Menos de 11 Semanas - Dra. Janeth Adriana García Cid">
@@ -15,16 +19,16 @@ import Contacto2 from '../components/Contacto2.astro';
     <Servicio 
       title='USG de Menos de 11 Semanas' 
       href='1' 
-      img='src/img/servicios/usg-10semanas.jpg'
-      img2='src/img/servicio/usg-10/embarazo.png' 
+      img={usg10}
+      img2={usg1}
       body="Un ultrasonido de menos de 11 semanas es un examen imagenológico que utiliza ondas sonoras para crear una imagen de cómo se está desarrollando el bebé en el útero. Este nos arrojará diferentes datos, entre ellos es que nos confirmará el embarazo, evaluá la vitalidad del embrión y nos mostrará el número de fetos."
       subtitle='¿En que me beneficia realizarme este ultrasonido?' 
       body2='Este nos ayuda a ver diferentes situaciones. Podemos observar, desde un inicio, cuantos fetos existen y así poder determinar el mejor procedimiento, cuidados, etc. Igualmente, nos ayuda a evaluar la vitalidad del feto, esto para saber si está creciendo de forma correcta y nos confirmará que todo esta transcurriendo de la mejor manera. Es bueno realizar todos los ultrasonidos necesarios para verificar que todo transcurra de la manera esperada, y en caso de detectar alguna anomalía, podamos actuar lo más pronto posible y de la mejor manera.' 
       subtitle2='Más información'
       info1='¿Cómo me preparo para este ultrasonido?'
       info2='¿Cómo se realiza el procedimiento?'
-      img3='src/img/servicio/usg-10/ultrasonido.jpg'
-      img4='src/img/servicio/usg-10/ultrasonido2.webp'
+      img3={USG2}
+      img4={usg3}
       infoDesplegable1='Este procedimiento no requiere de ninguna de preparación especial. Debido a que solamente se necesita exponer la zona del abdomen inferior, le convendría llevar una vestimenta holgada, de dos piezas.'
       infoDesplegable2='Sólo el área abdominal inferior necesita estar expuesta durante este procedimiento.'
       infoDesplegable3='Generalmente no se sienten molestias debidas a la presión a medida que presionan el transductor contra el área que está siendo examinada. No obstante, si el área es sensible, usted podría sentir presión o un dolor leve debido al transductor.'

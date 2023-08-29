@@ -7,6 +7,10 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
+import prueba from "../img/prueba.jpg";
+import duotest1 from "../img/servicio/duo-test/duo-test-1.jpg";
+import duotest2 from "../img/servicio/duo-test/duo-test-2.png";
+import duotest3 from "../img/servicio/duo-test/duo-test-3.jpeg";
 ---
 
 <Layout title="Duo Test - Dra. Janeth Adriana García Cid">
@@ -15,16 +19,16 @@ import Contacto2 from '../components/Contacto2.astro';
     <Servicio 
       title='Duo Test' 
       href='1' 
-      img='src/img/prueba.jpg'
-      img2='src/img/servicio/duo-test/duo-test-1.jpg' 
+      img={prueba}
+      img2={duotest1}
       body='Es un estudio no invasivo en donde se realiza una muestra sanguínea a la madre para medir la concentración de dos hormonas. Estas se utilizan en combinación con los marcadores del ultrasonido del primer trimestre para conocer la probabilidad de enfermedad de los cromosomas con Síndrome de Down, cuando se combinan juntos: marcadores bioquímicos más hallazgos del ultrasonido de primer trimestre la detección será de hasta un 95 % de enfermedad de los cromosomas.  Está combinación es lo ideal y siempre se recomienda a las pacientes.'
       subtitle='¿En que me beneficia realizarme este procedimiento?' 
       body2='La prueba proporciona la probabilidad de que el bebé tenga síndrome de Down, trisomía 13 o trisomía 18. Esta probabilidad u oportunidad, se basa en tres criterios: su edad, la información obtenida mediante un ultrasonido y un análisis de sangre. Los resultados del estudio pueden alertar a usted y a su médico de que su bebé está en un mayor riesgo de padecer uno de estos trastornos cromosómicos o de ser tranquilizador de que su bebé tiene un menor riesgo de padecer estas enfermedades.' 
       subtitle2='Más información'
       info1='¿Cómo me preparo para un duo test?'
       info2='¿Cómo se realiza el procedimiento?'
-      img3='src/img/servicio/duo-test/duo-test-3.jpeg'
-      img4='src/img/servicio/duo-test/duo-test-2.png'
+      img3={duotest3}
+      img4={duotest2}
       infoDesplegable1='Este procedimiento está compuesto por dos a su vez. El ultrasonido y la prueba duo test. Para el ultrasonido, debido a que solamente se necesita exponer la zona del abdomen inferior, le convendría llevar una vestimenta holgada, de dos piezas.'
       infoDesplegable2='Sólo la parte inferior y el brazo necesitan estar expuestas durante este procedimiento.'
       infoDesplegable3='Para el duo test, es necesario un ayuno de 8 horas'

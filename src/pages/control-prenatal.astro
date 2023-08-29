@@ -7,6 +7,10 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
+import adn3 from "../img/servicio/adn/adn-3.jpg";
+import control3 from "../img/servicio/control-prenatal/control-3.jpg";
+import control2 from "../img/servicio/control-prenatal/control-2.jpg";
+import control1 from "../img/servicio/control-prenatal/control-1.jpg";
 ---
 
 <Layout title="Control Prenatal - Dra. Janeth Adriana García Cid">
@@ -15,16 +19,16 @@ import Contacto2 from '../components/Contacto2.astro';
     <Servicio 
       title='Control Prenatal' 
       href='1' 
-      img='src/img/servicio/control-prenatal/control-1.jpg'
-      img2='src/img/servicio/control-prenatal/control-2.jpg' 
+      img={control1}
+      img2={control2}
       body='Son aquellas acciones y procedimientos que estarán destinados en la prevención, diagnóstico oportuno y el tratamiento de aquellos factores que pueden condicionar mayores riesgos maternos y perinatales. Esto nos permitirá disminuir las complicaciones que se pudieran presentar en tu embarazo a través de intervenciones de forma oportuna que permitan prevenir dichos riesgos y así lograr un buen resultado en tu embarazó.'
       subtitle='¿Cúal es la importancia del control prenatal?' 
       body2='El objetivo principal es asegurar a la paciente embarazada el mejor control médico del embarazo. Se solicitan exámenes de laboratorio generales y propios de la especialidad, se recomienda la ingesta de ácido fólico para prevenir que los niños nazcan con defectos en el tubo neural, se efectúan ultrasonidos para poder evaluar el crecimiento y desarrollo del feto, se realiza monitoreo para asegurar el bienestar fetal, se aplican, además, vacunas para aumentar la concentración de anticuerpos específicos en la madre, y, a su vez, para aumentar la concentración de anticuerpos en el bebé al nacimiento, proporcionando protección hasta el período de máxima susceptibilidad.' 
       subtitle2='Más información'
       info1='¿Cuándo se divide el control prenatal?'
       info2='¿Qué incluye cada consulta de control prenatal?'
-      img3='src/img/servicio/adn/adn-3.jpg'
-      img4='src/img/servicio/control-prenatal/control-3.jpg'
+      img3={adn3}
+      img4={control3}
       infoDesplegable1='El primer trimestre es fundamental ya que es durante esta etapa en la que se comenzarán a tomar decisiones importantes al evaluar el estado de salud de la madre para lograr un desarrollo adecuado del bebé.'
       infoDesplegable2='Llegado el segundo trimestre, los cuidados y estudios irán orientados en conocer posibles enfermedades congénitas, sexo y estado de salud en general del bebé para descartar o identificar posibles factores de riesgo.'
       infoDesplegable3='Durante el tercer y último trimestre, lo fundamental será el estado de salud general de ambos, haciendo hincapié en los cuidados pediátricos del recién nacido'

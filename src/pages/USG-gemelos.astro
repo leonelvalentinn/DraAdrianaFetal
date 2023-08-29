@@ -7,6 +7,10 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
+import usg3 from "../img/servicio/usg-11/ultrasonido-3.jpg";
+import USG2 from "../img/servicio/usg-10/ultrasonido.jpg";
+import ultrasonido1 from "../img/servicio/usg-gemelar/ultrasonido-1.jpg";
+import ultrasonido2 from "../img/servicio/usg-gemelar/ultrasonido-2.jpg";
 ---
 
 <Layout title="USG de Embarazos Gemelares - Dra. Janeth Adriana García Cid">
@@ -15,16 +19,16 @@ import Contacto2 from '../components/Contacto2.astro';
     <Servicio 
       title='USG de Embarazos Gemelares' 
       href='1' 
-      img='src/img/servicio/usg-gemelar/ultrasonido-1.jpg'
-      img2='src/img/servicio/usg-gemelar/ultrasonido-2.jpg' 
+      img={ultrasonido1}
+      img2={ultrasonido2}
       body='La ecografía es el mejor método diagnóstico no sólo para identificar una gestación gemelar, sino también para catalogarla y especificar su corionicidad (número de placentas) y su amniocidad (número de bolsas).'
       subtitle='¿En que me beneficia realizarme este ultrasonido?' 
       body2='Este ultrasonido evalúa la corionicidad, es decir si se trata de un embarazo gemelar con una placenta en la que ambos gemelos la comparten o dos placentas, una para cada gemelo, ya que de acuerdo a ello será la vigilancia en estos embarazos, si son embarazo gemelares con una sola placenta, la evaluación y el seguimiento deberá ser más estrecho, ya que que hay mayor riesgo de complicaciones en estos embarazos.' 
       subtitle2='Más información'
       info1='¿Cómo me preparo para este ultrasonido?'
       info2='¿Cómo se realiza el procedimiento?'
-      img3='src/img/servicio/usg-11/ultrasonido-3.jpg'
-      img4='src/img/servicio/usg-10/ultrasonido.jpg'
+      img3={usg3}
+      img4={USG2}
       infoDesplegable1='No es necesario una preparación especial para realizar este estudio. En dado caso, el médico puede solicitar la toma de mucha agua antes de realizarlo, así como no vaciar por completo la vejiga, ya que esto puede hacer que las imágenes salgan de mejor manera.'
       infoDesplegable2='Sólo el área abdominal inferior necesita estar expuesta durante este procedimiento, por ello, le convendría llevar una vestimenta holgada, de dos piezas.'
       infoDesplegable3='Generalmente no se sienten molestias debidas a la presión a medida que presionan el transductor contra el área que está siendo examinada. No obstante, si el área es sensible, usted podría sentir presión o un dolor leve debido al transductor.'

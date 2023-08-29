@@ -1,3 +1,22 @@
+---
+import usg10 from "../img/servicios/usg-10semanas.jpg";
+import usg11 from "../img/servicios/usg_11semanas.jpg";
+import usg2 from "../img/servicios/usg-segungo.jpg";
+import usgC from "../img/servicios/usg-crecimiento.png";
+import usgD from "../img/servicios/ultrasonido-doppler.png";
+import usgG from "../img/servicios/ultrasonido-gemelos.jpg";
+import D5 from "../img/servicios/usg-5d.webp";
+import revelacion from "../img/servicios/relevacion.jpg";
+import procedimientos from "../img/procedimientos.jpg";
+import adn from "../img/adn.jpg";
+import biopsia from "../img/biopsia-corion.jpg";
+import control from "../img/servicios/control-prenatal.png";
+import prueba from "../img/prueba.jpg";
+import riesgo from "../img/servicios/embarazo-riesgo.jpg";
+import parto from "../img/servicios/parto.jpg";
+import cesarea from "../img/servicios/Cesarea.jpg";
+---
+
 <div class="title" id="servicios">
   <h2 style="color: var(--morado-title); text-align: center;">SERVICIOS</h2>
   <hr class="subrayado">
@@ -7,49 +26,49 @@
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>USG de Menos de 11 Semanas</h3>
-      <img src="src/img/servicios/usg-10semanas.jpg" alt="">
+      <img src={usg10} alt="">
       <p></p>
       <a href="/USG-10"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>USG Génetico de Primer Trimestre 11-14 sdg</h3>
-      <img src="src/img/servicios/usg_11semanas.jpg" alt="">
+      <img src={usg11} alt="">
       <p>Evaluar el riesgo de síndrome de Down, así como determinar el riesgo de preeclampsia, restricción de crecimiento fetal y parto pretérmino.</p>
       <a href="/USG-11"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-3">
       <h3>USG Estructural Segundo Trimestre 18-24 sdg</h3>
-      <img src="src/img/servicios/usg-segungo.jpg" alt="">
+      <img src={usg2} alt="">
       <p>Evaluar a detalle que todos los órganos del bebé se hayan formados adecuadamente, ayuda a descartar malformaciones fetales.</p>
       <a href="/USG-segundo-trimestre"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-4">
       <h3>USG Crecimiento</h3>
-      <img src="src/img/servicios/usg-crecimiento.png" alt="">
+      <img src={usgC} alt="">
       <p>Determinar que el bebé vaya creciendo de forma adecuada para la edad gestacional. </p>
       <a href="/USG-crecimiento"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-5">
       <h3>Ultrasonido Doppler</h3>
-      <img src="src/img/servicios/ultrasonido-doppler.png" alt="">
+      <img src={usgD} alt="">
       <p>Evaluación de algunos flujos de sangre en vasos sanguíneos del bebé que nos hablarán del bienestar fetal.</p>
       <a href="/USG-doppler"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-6">
       <h3>Ultrasonidos de Embarazos Gemelares</h3>
-      <img src="src/img/servicios/ultrasonido-gemelos.jpg" alt="">
+      <img src={usgG} alt="">
       <p></p>
       <a href="/USG-gemelos"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-6">
       <h3>USG 3D, 4D, 5D</h3>
-      <img src="src/img/servicios/usg-5d.webp" alt="">
+      <img src={D5} alt="">
       <p>A través de la más alta tecnología permite obtener imágenes más claras y nítidas de tu bebé, en cual conocerás a detalle facciones faciales de tu bebé que estamos seguros te enamorarán. </p>
       <a href="/USG-3D-4D-5D"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-6">
       <h3>Revelación de Sexo Fetal</h3>
-      <img src="src/img/servicios/relevacion.jpg" alt="">
+      <img src={revelacion} alt="">
       <p></p>
       <a href="/revelacion-sexo"><button>Conoce más</button></a>
     </div>
@@ -61,13 +80,13 @@
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Amniocentesis</h3>
-      <img src="src/img/procedimientos.jpg" alt="">
+      <img src={procedimientos} alt="">
       <p></p>
       <a href="/Amniocentesis"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>Biopsia De Vellosidades Coriales</h3>
-      <img src="src/img/biopsia-corion.jpg" alt="">
+      <img src={biopsia} alt="">
       <p></p>
       <a href="/Biopsia-vellosidades"><button>Conoce más</button></a>
     </div>
@@ -79,13 +98,13 @@
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Duo Test</h3>
-      <img src="src/img/prueba.jpg" alt="">
+      <img src={prueba} alt="">
       <p>Marcadores bioquímicos séricos.</p>
       <a href="/Duo-test"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>ADN Fetal</h3>
-      <img src="src/img/adn.jpg" alt="">
+      <img src={adn} alt="">
       <p>Conocer si existe la posibilidad de presentar alguna alteración genética fetal durante el embarazo a través de una muestra sanguínea materna.</p>
       <a href="/adn-fetal"><button>Conoce más</button></a>
     </div>
@@ -97,25 +116,25 @@
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Control Prenatal</h3>
-      <img src="src/img/servicios/control-prenatal.png" alt="">
+      <img src={control} alt="">
       <p></p>
       <a href="/control-prenatal"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>Embarazos de Bajo y Alto Riesgo</h3>
-      <img src="src/img/servicios/embarazo-riesgo.jpg" alt="">
+      <img src={riesgo} alt="">
       <p></p>
       <a href="/embarazos-de-alto-riesgo"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-3">
       <h3>Atención de Parto</h3>
-      <img src="src/img/servicios/parto.jpg" alt="">
+      <img src={parto} alt="">
       <p></p>
       <a href="/parto"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-4">
       <h3>Cesárea</h3>
-      <img src="src/img/servicios/Cesarea.jpg" alt="">
+      <img src={cesarea} alt="">
       <p></p>
       <a href="/Cesarea"><button>Conoce más</button></a>
     </div>

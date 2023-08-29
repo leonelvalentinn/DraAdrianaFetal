@@ -7,6 +7,10 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
+import parto from "../img/servicios/parto.jpg";
+import parto1 from "../img/servicio/parto/parto-1.jpg";
+import parto2 from "../img/servicio/parto/parto-2.jpg";
+import parto3 from "../img/servicio/parto/parto-3.jpg";
 ---
 
 <Layout title="Atención de Parto - Dra. Janeth Adriana García Cid">
@@ -15,16 +19,16 @@ import Contacto2 from '../components/Contacto2.astro';
     <Servicio 
       title='Atención de Parto' 
       href='1' 
-      img='src/img/servicio/parto/parto-1.jpg'
-      img2='src/img/servicio/parto/parto-2.jpg' 
+      img={parto1}
+      img2={parto2}
       body='El parto normal es el proceso fisiológico con el que la mujer finaliza su gestación a término (entre las 37 y las 42 semanas cumplidas). Su inicio es espontáneo, se desarrolla y finaliza sin complicaciones, culmina con el nacimiento de un bebé sano y no necesita más intervención. La mayoría de las mujeres sanas, con la atención y apoyo adecuados y con un mínimo de procedimientos médicos pueden dar a luz sin poner en riesgo su seguridad y la de los bebés. Para ello es importante que las mujeres tengan confianza en sus posibilidades de afrontar el parto y que las matronas y obstetras contribuyan a la mejor evolución de este proceso fisiológico.'
       subtitle='El parto se compone de tres etapas principales:' 
       body2='Primera etapa: periodo de dilatación (o trabajo de parto). Cuenta con dos fases, inicial y activa. Las contracciones provocan la dilatación gradual del cuello uterino, que se va haciendo más delgado hasta llegar a desaparecer (borramiento) y casi a confundirse con el resto del útero. Estos cambios permiten que el feto pase a la vagina. Segunda etapa: periodo de expulsión. Se trata del nacimiento del bebé. Tercera etapa: periodo de alumbramiento. Se trata de la expulsión de la placenta.' 
       subtitle2='Más información'
       info1='Señales de que se aproxima el parto'
       info2='¿Qué incluye cada consulta de control prenatal?'
-      img3='src/img/servicio/parto/parto-3.jpg'
-      img4='src/img/servicios/parto.jpg'
+      img3={parto3}
+      img4={parto}
       infoDesplegable1='Romper Bolsa: Significa que se rompe la bolsa que contiene el líquido amniótico que rodea al bebé, produciendo la expulsión de este por la vagina. Es posible que se sienta un gran flujo o quizás uno más pequeño, pero se produce de manera espontánea, no se puede controlar como la orina, y aumenta con los movimientos.'
       infoDesplegable2='Pérdida del tapón mucoso: Se produce cuando el cuello del útero comienza a dilatarse. El tapón mucoso es un flujo espeso y de color amarillo/café, a veces sanguinolento, cuyo objetivo es mantener sellado el cuello del útero durante las 40 semanas de embarazo para proteger al bebé de posibles infecciones.'
       infoDesplegable3='Contracciones: Sin lugar a duda, es el síntoma más evidente de que el trabajo de parto se acerca. Las primeras contracciones se sienten como cólicos, es decir un suave dolor a lo largo del abdomen y este se pone duro, a veces acompañado de dolor de espalda. A medida que pasa el tiempo, la frecuencia es mayor y el intervalo entre cada contracción se hace más corto y probablemente más dolorosas. Si duran más de medio minuto y empiezan a ser más frecuentes y más fuertes, entonces es muy probable que se esté entrando en parto.'

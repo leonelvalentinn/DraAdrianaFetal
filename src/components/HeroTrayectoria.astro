@@ -1,8 +1,18 @@
+---
+import doc2 from "../img/doc-2.jpg";
+import uaeh from "../img/logos/logo-uaeh.jpg";
+import inper from "../img/logos/INPer_logo.jpg";
+import hospital from "../img/logos/logo-hospital.png";
+import unam from "../img/logos/logo-unam.jpg";
+import comego from '../img/logo-comego.png';
+import fetal from "../img/fetal-foundation.png";
+---
+
 <section class="cv-container">
   <h2>MI TRAYECTORIA</h2>
   <hr class="subrayado">
   <div class="container-txt">
-    <img class="img-hero" src="src/img/doc-2.jpg" alt="">
+    <img class="img-hero" src={doc2} alt="">
     <div class="txt-imagen">
       Hola, soy la <strong>Dra. Janeth Adriana García Cid</strong>, realicé la carrera de médico cirujano 
       en la Universidad Autónoma del Estado de Hidalgo, posteriormente realicé la especialidad de 
@@ -29,7 +39,7 @@
     <h3>ACADÉMICO</h3>
     <div class="cedulas">
       <div class="item-cedulas">
-        <img src="src/img/logos/logo-uaeh.jpg" alt="">
+        <img src={uaeh} alt="">
         <div class="txt-cedula">
           <p>Universidad Autónoma del Estado de Hidalgo</p>
           <p>Médico Cirujano</p>
@@ -38,8 +48,8 @@
       </div>
       <div class="item-cedulas">
         <div>
-          <img src="src/img/logos/logo-unam.jpg" alt="">
-          <img src="src/img/logos/logo-hospital.png" alt="">
+          <img src={unam} alt="">
+          <img src={hospital} alt="">
         </div>
         <div class="txt-cedula">
           <p>Universidad Nacional Autónoma de México</p>
@@ -50,8 +60,8 @@
       </div>
       <div class="item-cedulas parte-5">
         <div class="container-img">
-          <img src="src/img/logos/logo-unam.jpg" alt="">
-          <img src="src/img/logos/INPer_logo.jpg" alt="">
+          <img src={unam} alt="">
+          <img src={inper} alt="">
         </div>
         <div class="txt-cedula">
           <p>Universidad Nacional Autónoma de México</p>
@@ -66,7 +76,7 @@
     <h3>CERTIFICACIONES</h3>
     <div class="cedulas">
       <div class="item-cedulas">
-        <img src="src/img/logo-comego.png" alt="">
+        <img src={comego} alt="">
         <div class="txt-cedula">
           <p>Consejo Mexicano de Ginecología y Obstetricia</p>
           <p>Ginecología y Obstetricia</p>
@@ -74,7 +84,7 @@
         </div>
       </div>
       <div class="item-cedulas">
-        <img src="src/img/fetal-foundation.png" alt="">
+        <img src={fetal} alt="">
         <div class="txt-cedulas">
           <p>The Fetal Medicine Foundation</p>
           <p>Medicina Materno Fetal </p>

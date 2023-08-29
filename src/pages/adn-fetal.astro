@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarMovil from '../components/NavbarMovil.astro'
+import Footer from '../components/Footer.astro';
+import Ubicacion from '../components/Ubicacion.astro';
+import RedesFlotantes from '../components/RedesFlotantes.astro';
+import Servicio from '../components/Servicio.astro';
+import Up from '../components/Up.astro';
+import Contacto2 from '../components/Contacto2.astro';
+---
+
+<Layout title="ADN Fetal - Dra. Janeth Adriana García Cid">
+	<main id="inicio">
+		<NavbarMovil/>
+    <Servicio 
+      title='ADN Fetal' 
+      href='1' 
+      img='src/img/servicio/adn/adn-1.jpg'
+      img2='src/img/servicio/adn/adn-2.jpg' 
+      body='Es una prueba de detección para ver si un feto tiene determinadas anomalías congénitas (de nacimiento). Se hace para detectar anomalías congénitas causadas por una cantidad anormal de cromosomas. También puede revelar el sexo y el grupo sanguíneo del feto. Es un análisis de sangre que se le hace a la madre. La prueba puede hacerse tan temprano como a las 10 semanas de embarazo.'
+      subtitle='¿En que me beneficia realizarme este procedimiento?' 
+      body2='La prueba se usa para detectar anomalías congénitas causadas por un exceso o una deficiencia de cromosomas, como la trisomía 18 y el síndrome de Down (trisomía 21). Estas anomalías congénitas se llaman trisomías porque las células del feto tienen tres copias de un cromosoma en vez de dos que es lo habitual. Por ejemplo, en la trisomía 18, que causa problemas físicos y discapacidad intelectual, hay tres copias del cromosoma 18 en vez de dos. La prueba se hace para mujeres que corren un alto riesgo de tener un bebé con una anomalía congénita.' 
+      subtitle2='Más información'
+      info1='¿Cómo me preparo para un duo test?'
+      info2='¿Cómo se realiza el procedimiento?'
+      img3='src/img/servicio/adn/adn-3.jpg'
+      img4='src/img/servicio/duo-test/duo-test-2.png'
+      infoDesplegable1='No se necesita ninguna preparación especial para realizar esta prueba. '
+      infoDesplegable2='Sin embargo, es importante que le informemos previamente de cómo y por qué se realiza este estudio.'
+      infoDesplegable3='También es imprescindible una visita informativa posterior a la prueba para la  interpretación de los resultados.'
+      infoDesplegable4='Le colocará una banda elástica alrededor de la parte superior del brazo para detener el flujo de sangre. Esto hace que las venas por debajo de la banda se dilaten, para que sea más fácil insertar la aguja en la vena. Limpiará con alcohol el lugar de inserción de la aguja.'
+      infoDesplegable5='Insertará la aguja en la vena. Es posible que necesite más de un pinchazo con la aguja. Conectará un tubo a la aguja para llenarlo de sangre.'
+      infoDesplegable6='Le retirará la banda del brazo cuando haya extraído suficiente sangre. Colocará una almohadilla de gasa o una bolita de algodón en el sitio de la punción al extraer la aguja. Hará presión en el sitio y después le pondrá una venda.'
+      />
+    <Contacto2 />
+		<Ubicacion/>
+		<RedesFlotantes/>
+    <Up />
+		<Footer/>
+	</main>
+</Layout>

@@ -1,23 +1,29 @@
----
-import logo from '../img/logo-hor2.png';
----
-
 <div class="navbar-mov">
-  <img src={logo} alt="logo">
+  <img src="src/img/logo-hor2.png" alt="logo">
   <a id="btn-menu" class="btn-menu">
     <i class="bi bi-list"></i>
   </a>
   <a id="btn-close" class="btn-menu btn-menu-close" style="display: none;">
     <i class="bi bi-x-lg"></i>
   </a>
-  <div class="menu-desktop">
-    <a href="/" class="overlay-item">Inicio</a>
-    <a href="/Trayectoria" class="overlay-item">Conóceme</a>
-    <a href="/#servicios" class="overlay-item">Servicios</a>
-    <a href="" class="overlay-item">Ginecología</a>
-    <a href="#ubicacion" class="overlay-item">Ubicación</a>
-    <button><a href="tel:5514476308" target="_blank">Contacto</a></button>
-  </div>
+  <nav class="menu-desktop">
+    <ul class="ul-menu">
+      <li><a href="/" class="overlay-item">Inicio</a></li>
+      <li><a href="/Trayectoria" class="overlay-item">Conóceme</a></li>
+      <li>
+        <a href="/#servicios" class="overlay-item">Servicios</a>
+        <ul>
+          <li><a href="">Ultrasonidos</a></li>
+          <li><a href="">Procedimientos</a></li>
+          <li><a href="">la</a></li>
+          <li><a href="">lelee</a></li>
+        </ul>
+      </li>
+      <li><a href="" class="overlay-item">Ginecología</a></li>
+      <li><a href="#ubicacion" class="overlay-item">Ubicación</a></li>
+      <li><button><a href="tel:5514476308" target="_blank">Contacto</a></button></li>
+    </ul>
+  </nav>
 </div>
 <div class="overlay-menu" id="overlay-menu">
   <a href="/" class="overlay-item">Inicio</a>
@@ -144,6 +150,45 @@ import logo from '../img/logo-hor2.png';
       opacity: 1;
       scale: 100%;
     }
+  }
+  .menu-desktop ul {
+    list-style: none;
+    padding: 0;
+  }
+  .menu-desktop .ul-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .menu-desktop ul li {
+    position: relative;
+    float: left;
+    margin: 5px;
+  }
+  .menu-desktop ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  .menu-desktop ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: rgba(164,204,196,0.9);
+    display: none;
+    border-radius: 20px;
+  }
+  .menu-desktop ul li ul li { 
+    width: 100%;
+  }
+  .menu-desktop ul li ul li ul {
+    left: 200px;
+    top: 0;
+  }
+  .menu-desktop ul li:hover > ul,
+  .menu-desktop ul li:focus-within > ul {
+    display: initial;
   }
   /*Media query's */
   @media (min-width: 425px) {

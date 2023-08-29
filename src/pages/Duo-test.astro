@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarMovil from '../components/NavbarMovil.astro'
+import Footer from '../components/Footer.astro';
+import Ubicacion from '../components/Ubicacion.astro';
+import RedesFlotantes from '../components/RedesFlotantes.astro';
+import Servicio from '../components/Servicio.astro';
+import Up from '../components/Up.astro';
+import Contacto2 from '../components/Contacto2.astro';
+---
+
+<Layout title="Duo Test - Dra. Janeth Adriana García Cid">
+	<main id="inicio">
+		<NavbarMovil/>
+    <Servicio 
+      title='Duo Test' 
+      href='1' 
+      img='src/img/prueba.jpg'
+      img2='src/img/servicio/duo-test/duo-test-1.jpg' 
+      body='Es un estudio no invasivo en donde se realiza una muestra sanguínea a la madre para medir la concentración de dos hormonas. Estas se utilizan en combinación con los marcadores del ultrasonido del primer trimestre para conocer la probabilidad de enfermedad de los cromosomas con Síndrome de Down, cuando se combinan juntos: marcadores bioquímicos más hallazgos del ultrasonido de primer trimestre la detección será de hasta un 95 % de enfermedad de los cromosomas.  Está combinación es lo ideal y siempre se recomienda a las pacientes.'
+      subtitle='¿En que me beneficia realizarme este procedimiento?' 
+      body2='La prueba proporciona la probabilidad de que el bebé tenga síndrome de Down, trisomía 13 o trisomía 18. Esta probabilidad u oportunidad, se basa en tres criterios: su edad, la información obtenida mediante un ultrasonido y un análisis de sangre. Los resultados del estudio pueden alertar a usted y a su médico de que su bebé está en un mayor riesgo de padecer uno de estos trastornos cromosómicos o de ser tranquilizador de que su bebé tiene un menor riesgo de padecer estas enfermedades.' 
+      subtitle2='Más información'
+      info1='¿Cómo me preparo para un duo test?'
+      info2='¿Cómo se realiza el procedimiento?'
+      img3='src/img/servicio/duo-test/duo-test-3.jpeg'
+      img4='src/img/servicio/duo-test/duo-test-2.png'
+      infoDesplegable1='Este procedimiento está compuesto por dos a su vez. El ultrasonido y la prueba duo test. Para el ultrasonido, debido a que solamente se necesita exponer la zona del abdomen inferior, le convendría llevar una vestimenta holgada, de dos piezas.'
+      infoDesplegable2='Sólo la parte inferior y el brazo necesitan estar expuestas durante este procedimiento.'
+      infoDesplegable3='Para el duo test, es necesario un ayuno de 8 horas'
+      infoDesplegable4='Este examen incluye un ultrasonido y un análisis de sangre materna. En el ultrasonido se tomará una medida del fluido debajo de la piel a lo largo de la parte posterior del cuello del bebé, llamada Translucencia Nucal (TN).'
+      infoDesplegable5='El ultrasonido también tratará de determinar si el hueso nasal de su bebé puede ser visto. Se extraerá una muestra de sangre materna para analizar'
+      infoDesplegable6='Este examen debe realizarse entre las 9 y 13.5 semanas de gestación.'
+      />
+    <Contacto2 />
+		<Ubicacion/>
+		<RedesFlotantes/>
+    <Up />
+		<Footer/>
+	</main>
+</Layout>

@@ -24,12 +24,6 @@ import cesarea from "../img/servicios/Cesarea.jpg";
 <section class="servicios">
   <h3 class="sub-title">Ultrasonidos Especializados</h3>
   <div class="container-grid">
-    <div class="item-servicio parte-1">
-      <h3>USG de Menos de 11 Semanas</h3>
-      <img src={usg10} alt="">
-      <p></p>
-      <a href="/USG-10"><button>Conoce más</button></a>
-    </div>
     <div class="item-servicio parte-2">
       <h3>USG Génetico de Primer Trimestre 11-14 sdg</h3>
       <img src={usg11} alt="">
@@ -54,23 +48,25 @@ import cesarea from "../img/servicios/Cesarea.jpg";
       <p>Evaluación de algunos flujos de sangre en vasos sanguíneos del bebé que nos hablarán del bienestar fetal.</p>
       <a href="/USG-doppler"><button>Conoce más</button></a>
     </div>
-    <div class="item-servicio parte-6">
+    <div class="item-servicio parte-">
       <h3>Ultrasonidos de Embarazos Gemelares</h3>
       <img src={usgG} alt="">
       <p></p>
       <a href="/USG-gemelos"><button>Conoce más</button></a>
     </div>
-    <div class="item-servicio parte-6">
+    <div class="item-servicio parte-">
       <h3>USG 3D, 4D, 5D</h3>
       <img src={D5} alt="">
       <p>A través de la más alta tecnología permite obtener imágenes más claras y nítidas de tu bebé, en cual conocerás a detalle facciones faciales de tu bebé que estamos seguros te enamorarán. </p>
       <a href="/USG-3D-4D-5D"><button>Conoce más</button></a>
     </div>
-    <div class="item-servicio parte-6">
-      <h3>Revelación de Sexo Fetal</h3>
-      <img src={revelacion} alt="">
-      <p></p>
-      <a href="/revelacion-sexo"><button>Conoce más</button></a>
+    <div class="parte-6">
+      <div class="item-servicio parte-66">
+        <h3>Revelación de Sexo Fetal</h3>
+        <img src={revelacion} alt="">
+        <p></p>
+        <a href="/revelacion-sexo"><button>Conoce más</button></a>
+      </div>
     </div>
   </div>
 </section>
@@ -270,6 +266,16 @@ import cesarea from "../img/servicios/Cesarea.jpg";
     .servicios .container-grid, .servicios-procedimientos .container-grid {
       grid-template-columns: repeat(2, minmax(200px, 400px));
       gap: 40px;
+    }
+    .parte-6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .parte-6 .parte-66 {
+      width: 400px;
     }
   }
 </style>

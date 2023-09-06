@@ -10,6 +10,7 @@ import gine from '../img/servicio/ginecologia/ginecologia.jpg';
 import gine1 from '../img/servicio/ginecologia/ginecologia-2.png';
 import gine2 from '../img/servicio/ginecologia/ginecologia-3.jpg';
 import gine3 from '../img/servicio/ginecologia/ginecologia-4.jpg';
+import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
 ---
 
 <Layout title="Ginecología - Dra. Janeth Adriana García Cid">
@@ -54,7 +55,7 @@ import gine3 from '../img/servicio/ginecologia/ginecologia-4.jpg';
       </div>
       <h2>Métodos de Planificación Familiar </h2>
       <hr class="subrayado">
-      <div class="">
+      <div class="container-planificacion reverse">
         <img src={gine3} alt="">
         <div>
           <h4>Atenciones en:</h4>
@@ -66,11 +67,14 @@ import gine3 from '../img/servicio/ginecologia/ginecologia-4.jpg';
       </div>
       <h2 class="title-consulta">Cada Consulta Incluye</h2>
       <hr class="subrayado">
-      <ul>
-        <li>Revisión de Historia clínica</li>
-        <li>Toma de signos vitales, talla y peso</li>
-        <li>Rastreo ultrasonográfico de útero y de ovarios</li>
-      </ul>
+      <div class="container-planificacion">
+        <img src={gine4} alt="">
+        <ul>
+          <li>Revisión de Historia clínica</li>
+          <li>Toma de signos vitales, talla y peso</li>
+          <li>Rastreo ultrasonográfico de útero y de ovarios</li>
+        </ul>
+      </div>
     </section>
     <Contacto2 />
 		<Ubicacion/>
@@ -156,6 +160,9 @@ import gine3 from '../img/servicio/ginecologia/ginecologia-4.jpg';
     .container-planificacion {
       flex-direction: row;
       justify-content: space-around;
+    }
+    .reverse {
+      flex-direction: row-reverse;
     }
     .container-planificacion img {
       width: 50%;

@@ -1,9 +1,12 @@
 ---
 interface Props {
 	title: string;
-	body: string;
-	body2: string;
-	href: string;
+	punto1: string;
+  punto2: string;
+  punto3: string;
+  punto4: string;
+  punto5: string;
+  punto6: string;
 
 	img: string;
 	img2: string;
@@ -25,7 +28,8 @@ interface Props {
   infoDesplegable6: string;
 }
 
-const { href, title, body, body2, img, subtitle, subtitle2, img2, img3, img4, info1, info2, infoDesplegable1, infoDesplegable2, infoDesplegable3, infoDesplegable4, infoDesplegable5, infoDesplegable6 } = Astro.props;
+const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, subtitle, subtitle2, img2, img3, img4, info1, info2, infoDesplegable1, infoDesplegable2, infoDesplegable3, infoDesplegable4, infoDesplegable5, infoDesplegable6 } = Astro.props;
+
 ---
 
 <section class="hero-container" id="inicio">
@@ -33,17 +37,18 @@ const { href, title, body, body2, img, subtitle, subtitle2, img2, img3, img4, in
   <hr class="subrayado">
   <div class="container-materno">
     <img src={img} alt="">
-    <p>{body}</p>
+    <ul class="container-list" id="container-list">
+      <li>{punto1}</li>
+      <li>{punto2}</li>
+      <li>{punto3}</li>
+      <li>{punto4}</li>
+      <li>{punto5}</li>
+      <li>{punto6}</li>
+    </ul>
   </div>
   <div class="why">
-    <h2>{subtitle}</h2>
-    <hr class="subrayado">
-    <div class="container-why">
-      <img src={img2} alt="">
-      <div>
-        <p>{body2}</p>
-      </div>
-    </div>
+    <h2>{infoDesplegable2}</h2>
+    <p>{infoDesplegable1}</p>
   </div>
 	<!-- Cambios 
 	<h2>{subtitle2}</h2>
@@ -97,7 +102,7 @@ const { href, title, body, body2, img, subtitle, subtitle2, img2, img3, img4, in
     margin: 0 0 10px 0;
     text-align: center;
   }
-  .hero-container h2, .hero-container h3 {
+  .hero-container h2, .hero-container h3, .why h2 {
     color: var(--morado-title);
     text-align: center;
 		font-weight: bolder;
@@ -139,6 +144,12 @@ const { href, title, body, body2, img, subtitle, subtitle2, img2, img3, img4, in
 		text-decoration: none;
 		color: black;
 	}
+  .container-list {
+    list-style: none;
+  }
+  .container-list li {
+    margin-bottom: 5px;
+  }
   @keyframes show {
     from {
       opacity: 0;

@@ -1,25 +1,93 @@
+---
+interface Props {
+  img1: string;
+  img2: string;
+  img3: string;
+  img4: string;
+  img5: string;
+}
+const { img1, img2, img3, img4, img5 } = Astro.props;
+---
+
+<div class="title">
+  <h2>Nuestros Pacientes</h2>
+  <hr class="subrayado">
+</div>
 <section class="testimonios">
   <div class="container-testimonios-carousel">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="src/img/foto-bb.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="src/img/foto-bb.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-item active">
+          <img src={img1} class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="src/img/foto-bb.jpg" class="d-block w-100" alt="...">
+          <img src={img2} class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src={img3} class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src={img4} class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src={img5} class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </div>
 </section>
+
+<!-- Estilos -->
+<style>
+  .testimonios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 6%;
+  }
+  .container-testimonios-carousel {
+    width: 100%;
+  }
+  .carousel-inner {
+    border-radius: 40px;
+  }
+  .subrayado {
+    border: 2px solid;
+    width: 70%;
+    color: blueviolet;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .title h2 {
+    color: var(--morado-title);
+    text-align: center;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media (min-width: 768px) {
+    .container-testimonios-carousel {
+    width: 600px;
+  }
+  }
+</style>

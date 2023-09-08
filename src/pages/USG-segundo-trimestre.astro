@@ -7,35 +7,73 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import usg2 from "../img/servicios/usg-segungo.jpg";
+import usg2 from "../img/servicios/usg-segundo.jpg";
 import usg3 from "../img/servicio/usg-11/ultrasonido-3.jpg";
 import usg4 from "../img/servicio/usg-11/ultrasonido-4.jpg";
 import ultrasonido from "../img/servicio/usg-18/ultrasonido-1.jpg";
+import img1 from "../img/servicio/usg-18/Imagen1.png";
+import img2 from "../img/servicio/usg-18/Imagen2.png";
+import img3 from "../img/servicio/usg-18/Imagen3.png";
+import img4 from "../img/servicio/usg-18/Imagen4.png";
+import img5 from "../img/servicio/usg-18/Imagen5.jpg";
+import img6 from "../img/servicio/usg-18/Imagen6.png";
+import img7 from "../img/servicio/usg-18/Imagen7.jpg";
+import img8 from "../img/servicio/usg-18/Imagen8.png";
+import img9 from "../img/servicio/usg-18/Imagen9.png";
+import Testimonios from '../components/Testimonios.astro';
 ---
 
 <Layout title="USG Estructural Segundo Trimestre 18-24 sdg - Dra. Janeth Adriana García Cid">
 	<main id="inicio">
 		<NavbarMovil/>
     <Servicio 
-      title='USG Estructural Segundo Trimestre 18-24 sdg' 
-      href='1' 
+      title='¿En qué me beneficia realizarme este ultrasonido?' 
+      punto1='❤ Se realiza la evaluación estructural anatómica del feto de manera detallada, permite identificar que se hayan formado adecuadamente todos los órganos del bebé, permite detectar alteraciones o defectos estructurales.' 
+      punto2='❤ Se lleva a cabo la evaluación del riesgo de parto pretérmino a través de la  evaluación ultrasonográfica  vía vaginal de la longitud del cuello uterino.' 
+      punto3='❤ Evaluación de la localización placentaria por vía vaginal, ayuda a descartar  placentas de inserción baja o placentas previas  (cuando se insertan a nivel del cuello uterino).' 
+      punto4='❤ ¡Conocerás el sexo de tu bebé!'     
+      punto5=''
+      punto6=''
+      infoDesplegable1='Todas las pacientes embarazadas deben realizarse este ultrasonido entre la semana 18-24 de gestación y solo deberá ser realizado por un médico especializado y altamente capacitado, como un médico materno fetal.'
+      infoDesplegable2='Importante'
       img={usg2}
       img2={ultrasonido}
-      body='El ultrasonido estructural consiste en el examen del bebé por medio de un equipo ultrasónico para conocer su evolución entre la semana 18 y 24 de gestación. El ultrasonido estructural permite identificar posibles anomalías en el crecimiento físico del feto, por lo cual, es de sumamente importante realizarlo. A este estudio también se le conoce como sonograma y funciona a través de ondas sonoras de alta frecuencia que rebotan en el interior del cuerpo y se transforman en una imagen con ayuda de una computadora.'
       subtitle='¿En que me beneficia realizarme este ultrasonido?' 
-      body2='Este ultrasonido nos ayuda a revisar que todo esté en orden, realiza una evaluación estructural anatómica del feto de manera detallada, permite identificar que se hayan formado adecuadamente todos los órganos del bebé, permite detectar alteraciones o defectos estructurales. Evalúa el riesgo de parto pretérmino a través de la evaluación ultrasonográfica vía vaginal de la longitud del cérvix (cuello del útero). Evaluación de la localización placentaria, ayuda a descartar placentas de inserción baja o placentas previas (cuando se insertan a nivel del cuello uterino a través de la evaluación vaginal). Conocerás el sexo de tu bebé.' 
       subtitle2='Más información'
       info1='¿Cómo me preparo para este ultrasonido?'
       info2='¿Cómo se realiza el procedimiento?'
       img3={usg3}
       img4={usg4}
-      infoDesplegable1='No es necesario una preparación especial para realizar este estudio. En dado caso, el médico puede solicitar la toma de mucha agua antes de realizarlo, así como no vaciar por completo la vejiga, ya que esto puede hacer que las imágenes salgan de mejor manera.'
-      infoDesplegable2='Sólo el área abdominal inferior necesita estar expuesta durante este procedimiento, por ello, le convendría llevar una vestimenta holgada, de dos piezas.'
       infoDesplegable3='Generalmente no se sienten molestias debidas a la presión a medida que presionan el transductor contra el área que está siendo examinada. No obstante, si el área es sensible, usted podría sentir presión o un dolor leve debido al transductor.'
       infoDesplegable4='Para realizar este ultrasonido usted yacerá acostado boca arriba en una mesa de examen que puede inclinarse o moverse. Los pacientes podrían tener que ponerse de costado para mejorar la calidad de las imágenes.'
       infoDesplegable5='Este estudio suele durar entre 45 a 60 minutos. En él, se le aplicará un gel en el estómago y se colocará la sonda por encima y así revisar todas las partes del cuerpo del feto.'
       infoDesplegable6='Una vez terminado el proceso de toma de imágenes, el tecnólogo limpiará el gel transparente de ultrasonido de su piel. Cualquier resto de gel que quede, se secará rápidamente. El gel de ultrasonido generalmente no mancha ni destiñe la ropa. Por lo general, este examen de ultrasonido se completa en 30 minutos.'
       />
+      <Testimonios
+        img1={img1}
+        img2={img2}
+        img3={img3}
+        img4={img4}
+        img5={img5}
+        >
+        <button slot="btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button slot="btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button slot="btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button slot="btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <div slot="item" class="carousel-item">
+          <img src={img6} class="d-block w-100" alt="...">
+        </div>
+        <div slot="item" class="carousel-item">
+          <img src={img7} class="d-block w-100" alt="...">
+        </div>
+        <div slot="item" class="carousel-item">
+          <img src={img8} class="d-block w-100" alt="...">
+        </div>
+        <div slot="item" class="carousel-item">
+          <img src={img9} class="d-block w-100" alt="...">
+        </div>
+      </Testimonios>
+        
     <Contacto2 />
 		<Ubicacion/>
 		<RedesFlotantes/>

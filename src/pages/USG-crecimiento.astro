@@ -12,31 +12,48 @@ import USG2 from "../img/servicio/usg-10/ultrasonido.jpg";
 import usgC from "../img/servicio/usg-crecimiento/ultrasonido-1.jpg";
 import usgC1 from "../img/servicio/usg-crecimiento/ultrasonido-2.png";
 import Testimonios from '../components/Testimonios.astro';
+import img1 from "../img/servicio/usg-crecimiento/Imagen1.png"
+import img2 from "../img/servicio/usg-crecimiento/Imagen1.jpg"
+import img3 from "../img/servicio/usg-crecimiento/Imagen1.jpg"
+import img4 from "../img/servicio/usg-crecimiento/Imagen1.jpg"
+import img5 from "../img/servicio/usg-crecimiento/Imagen1.jpg"
 ---
 
 <Layout title="USG de Crecimiento - Dra. Janeth Adriana García Cid">
 	<main id="inicio">
 		<NavbarMovil/>
     <Servicio 
-      title='USG de Crecimiento' 
-      href='1' 
+      title='¿Qué se realiza en este ultrasonido?' 
+      punto1='❤ Evaluar que el bebé esté creciendo de forma adecuada de acuerdo a su edad gestacional' 
+      punto2='❤ Permite detectar alteraciones en el crecimiento como restricción de crecimiento fetal (cuando el bebé no crece lo adecuado o lo esperado a su edad gestacional) o fetos grandes para su edad gestacional.' 
+      punto3='❤ Detección de alteraciones estructurales que pueden aparecer de forma tardía en el embarazo, es decir en el tercer trimestre del embarazo.' 
+      punto4='❤ Evaluación de la placenta.' 
+      punto5='❤ Evaluación de la cantidad de líquido amniótico' 
+      punto6=''    
       img={usgC}
       img2={usgC1}
-      body='Esta es la tercera ecografía del embarazo, se realiza después de la semana 28, con el objetivo de detectar de forma temprana, anomalías en el crecimiento fetal; en caso de detectar anomalías se deben considerar más ultrasonidos. La Fundación de Medicina Fetal de Londres considera realizar evaluaciones a las 37 y 41 semanas. Los avances médicos y tecnológicos han hecho aumentar nuestros conocimientos sobre muchas enfermedades que hasta hace unos años eran difícil de detectar.'
-      subtitle='Galería' 
-      body2='Este ultrasonido evalúa que el bebé esté creciendo de forma adecuada de acuerdo a su edad gestacional. Permite detectar alteraciones en el crecimiento como restricción de crecimiento fetal (cuando el bebé no crece lo adecuado o lo esperado a su edad gestacional) o fetos grandes para su edad gestacional, detecta alteraciones estructurales que pueden aparecer de forma tardía en el embarazo, es decir en el tercer trimestre del embarazo, evalúa la placenta y la cantidad de líquido amniótico.' 
+      subtitle='Galería'
       subtitle2='Más información'
       info1='¿Cómo me preparo para este ultrasonido?'
       info2='¿Cómo se realiza el procedimiento?'
       img3={usg3}
       img4={USG2}
-      infoDesplegable1='No es necesario una preparación especial para realizar este estudio. En dado caso, el médico puede solicitar la toma de mucha agua antes de realizarlo, así como no vaciar por completo la vejiga, ya que esto puede hacer que las imágenes salgan de mejor manera.'
-      infoDesplegable2='Sólo el área abdominal inferior necesita estar expuesta durante este procedimiento, por ello, le convendría llevar una vestimenta holgada, de dos piezas.'
+      infoDesplegable1='Todas las pacientes embarazadas deben realizarse este ultrasonido después de la semana 29-32 de gestación y solo deberá ser realizado por un médico especializado y altamente capacitado, como un médico materno fetal.' 
+      infoDesplegable2='Importante'
       infoDesplegable3='Generalmente no se sienten molestias debidas a la presión a medida que presionan el transductor contra el área que está siendo examinada. No obstante, si el área es sensible, usted podría sentir presión o un dolor leve debido al transductor.'
       infoDesplegable4='Para realizar este ultrasonido usted yacerá acostado boca arriba en una mesa de examen que puede inclinarse o moverse. Los pacientes podrían tener que ponerse de costado para mejorar la calidad de las imágenes.'
       infoDesplegable5='Este estudio suele durar entre 45 a 60 minutos. En él, se le aplicará un gel en el estómago y se colocará la sonda por encima y así revisar todas las partes del cuerpo del feto.'
       infoDesplegable6='Una vez terminado el proceso de toma de imágenes, el tecnólogo limpiará el gel transparente de ultrasonido de su piel. Cualquier resto de gel que quede, se secará rápidamente. El gel de ultrasonido generalmente no mancha ni destiñe la ropa.'
       />
+      <Testimonios 
+        img1={img1}
+        img2={img2}
+        img3={img3}
+        img4={img4}
+        img5={img5}
+      >
+
+      </Testimonios>
     <Contacto2 />
 		<Ubicacion/>
 		<RedesFlotantes/>

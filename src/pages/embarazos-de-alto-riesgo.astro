@@ -8,34 +8,51 @@ import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
 import riesgo from "../img/servicios/embarazo-riesgo.jpg";
-import riesgo1 from "../img/servicio/riesgo/riesgo-1.jpg";
-import adn3 from "../img/servicio/adn/adn-3.jpg";
-import control3 from "../img/servicio/control-prenatal/control-3.jpg";
 ---
 
 <Layout title="Embarazos de Bajo y Alto Riesgo - Dra. Janeth Adriana García Cid">
 	<main id="inicio">
 		<NavbarMovil/>
     <Servicio 
-      title='Embarazos de Bajo y Alto Riesgo' 
-      href='1' 
+      title='¿Qué es un embarazo de alto riesgo?'  
+      punto1='❤ Es aquel que tiene más posibilidades de complicaciones, tanto desde el punto de vista de la madre como para él bebe, y por lo tanto merece un control más estricto durante el transcurso de la gestación, parto y postparto.'
+      punto2='❤ Un embarazo de alto riesgo es aquel que pone en riesgo la salud o la vida de la madre o del feto. Es necesario atención de personal altamente capacitado. Algunos embarazos se vuelven de alto riesgo a medida que progresan, mientras que algunas mujeres tienen mayor riesgo de tener complicaciones incluso antes de quedar embarazadas, por diversas razones. Los cuidados prenatales regulares desde el inicio del embarazo ayudan a muchas mujeres a tener embarazos saludables y partos sin complicaciones.'
+      punto3=''
+      punto4=''
+      punto5=''
+      punto6=''
       img={riesgo}
-      img2={riesgo1}
-      body='Un embarazo de alto riesgo es aquel que pone en riesgo la salud o la vida de la madre o del feto. Es necesario atención de personal altamente capacitado. Algunos embarazos se vuelven de alto riesgo a medida que progresan, mientras que algunas mujeres tienen mayor riesgo de tener complicaciones incluso antes de quedar embarazadas, por diversas razones. Los cuidados prenatales regulares desde el inicio del embarazo ayudan a muchas mujeres a tener embarazos saludables y partos sin complicaciones.'
-      subtitle='¿Cuáles son los factores de riesgo de un embarazo de alto riesgo?' 
-      body2='A veces, un embarazo de alto riesgo es el resultado de una afección médica presente antes del embarazo. En otros casos, una afección médica que tú o tu bebé desarrollan durante el embarazo hace que se convierta en un embarazo de alto riesgo. Estos son algunos de los factores específicos que pueden incidir en un embarazo de alto riesgo: Edad avanzada de la madre, problemas de salud materna, complicaciones en el embarazo, embarazo múltiple, etc.' 
-      subtitle2='Más información'
-      info1='¿Qué medidas puedo tomar para promover un embarazo saludable?'
-      info2='¿Qué más tengo que saber sobre un embarazo de alto riesgo?'
-      img3={adn3}
-      img4={control3}
-      infoDesplegable1='Programa una cita médica antes de quedar embarazada. Si planeas quedar embarazada, consúltanos para aconsejarte que empieces a tomar una vitamina prenatal diaria con ácido fólico y que alcances un peso saludable antes de quedar embarazada. Si tienes una afección médica, tu tratamiento podría modificarse a modo de preparación para el embarazo.'
-      infoDesplegable2='Solicita atención médica prenatal de manera regular. Las consultas prenatales ayudan a que controlemos tu salud y la de tu bebé.'
-      infoDesplegable3='Evita las sustancias de riesgo. Si fumas, deja de hacerlo. El alcohol y las drogas ilícitas también están prohibidos. Habla con nosotros cualquier medicamento o suplemento que tomes.'
-      infoDesplegable4='Habla con nosotros sobre cómo controlar cualquier afección médica que tengas durante el embarazo y cómo tu salud podría afectar el trabajo de parto y el parto. Comunícate si presentas lo siguiente:'
-      infoDesplegable5='Sangrado o secreción vaginales acuosa, dolores de cabeza intensos, dolor o calambres en la parte inferior del abdomen; disminución de la actividad fetal, dolor o sensación de ardor al orinar, cambios en la visión, que incluyen visión borrosa, hinchazón repentina o extensa en la cara; las manos o los dedos, fiebre o escalofríos, vómitos o náuseas persistentes, mareos, pensamientos sobre lastimarte a ti misma o a tu bebé'
-      infoDesplegable6='Un embarazo de alto riesgo puede tener altibajos. Haz todo lo posible por mantener una actitud positiva mientras tomas medidas para promover un embarazo saludable.'
-      />
+      infoDesplegable1=''
+      infoDesplegable2=''
+    >
+    <h4>¿Cuáles son algunos de los factores que hacen que un embarazo sea de alto riesgo?</h4>
+    <div class="container-list">
+      <ul>
+        <li>❤ Condiciones de salud existentes</li>
+        <li>❤ Hipertensión</li>
+        <li>❤ Diabetes</li>
+        <li>❤ Nefropatía. Enfermedad renal</li>
+        <li>❤ Enfermedades autoinmune (lupus eritematoso sitémico)</li>
+        <li>❤ Enfermedades de la tiroides</li>
+        <li>❤ Obesidad</li>
+        <li>❤ Edad</li>
+        <li>❤ Madres adolescentes</li>
+        <li>❤ Embarazos por primera vez después de los 35 años</li>
+      </ul>
+      <ul>
+        <li>❤ Factores de estilo de vida</li>
+        <li>❤ Consumo de alcohol</li>
+        <li>❤ Consumo de tabaco</li>
+        <li>❤ Consumo de drogas</li>
+        <li>❤ Condiciones del embarazo</li>
+        <li>❤ Embarazo gemelar</li>
+        <li>❤ Diabetes gestacional</li>
+        <li>❤ Preeclampsia</li>
+        <li>❤ Parto pretermino previo</li>
+        <li>❤ Defectos congénitos del feto</li>
+      </ul>
+    </div>
+    </Servicio>
     <Contacto2 />
 		<Ubicacion/>
 		<RedesFlotantes/>
@@ -43,3 +60,26 @@ import control3 from "../img/servicio/control-prenatal/control-3.jpg";
 		<Footer/>
 	</main>
 </Layout>
+
+<style>
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+  }
+  h4 {
+    font-weight: bold;
+    color: var(--morado-title);
+    text-align: center;
+  }
+  .container-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    .container-list {
+      flex-direction: row;
+    }
+  }
+</style>

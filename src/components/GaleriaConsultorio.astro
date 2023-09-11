@@ -1,9 +1,9 @@
 ---
 import instalacion1 from '../img/instalacion-2.jpg';
-import instalacion2 from "../img/instalacion-3.jpg";
+import instalacion2 from "../img/instalacion-1.jpg";
 import instalacion3 from "../img/instalacion-4.jpg";
 import instalacion4 from "../img/instalacion-5.jpg";
-import instalacion5 from "../img/instalacion-6.jpg";
+import instalacion5 from "../img/instalacion-6.webp";
 import instalacion6 from "../img/instalacion.jpg";
 ---
 <div class="title">
@@ -16,19 +16,19 @@ import instalacion6 from "../img/instalacion.jpg";
 <section class="instalaciones">
   <div class="container-grid">
     <div class="item-galeria item-1">
-      <img src={instalacion1} alt="">
+      <img src={instalacion4} alt="">
     </div>
     <div class="item-galeria item-2">
-      <img src={instalacion6} alt="">
+      <img src={instalacion3} alt="">
     </div>
     <div class="item-galeria item-3">
       <img src={instalacion2} alt="">
     </div>
     <div class="item-galeria item-4">
-      <img src={instalacion3} alt="">
+      <img src={instalacion6} alt="">
     </div>
     <div class="item-galeria item-5">
-      <img src={instalacion4} alt="">
+      <img src={instalacion1} alt="">
     </div>
     <div class="item-galeria item-6">
       <img src={instalacion5} alt="">
@@ -68,16 +68,14 @@ import instalacion6 from "../img/instalacion.jpg";
   }
   .instalaciones .container-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
   .instalaciones .container-grid .item-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    
   }
   .instalaciones .container-grid .item-6 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    
   }
   .instalaciones .container-grid .item-galeria img {
     width: 100%;        /*Estilos normales de la imagen*/
@@ -113,14 +111,16 @@ import instalacion6 from "../img/instalacion.jpg";
     }
     .instalaciones .container-grid .item-1 {
       grid-column-start: 1;
-      grid-column-end: 4;
+      grid-column-end: 3;
     }
     .instalaciones .container-grid .item-2 {
       grid-column-start: 1;
       grid-column-end: 3;
     }
     .instalaciones .container-grid .item-3 {
-      
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 3;
     }
     .instalaciones .container-grid .item-4 {
       

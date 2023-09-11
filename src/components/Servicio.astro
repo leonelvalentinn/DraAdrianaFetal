@@ -9,26 +9,12 @@ interface Props {
   punto6: string;
 
 	img: string;
-	img2: string;
-	img3: string;
-  img4: string;
-
-	subtitle: string;
-	subtitle2: string;
-
-	info1: string;
-	info2: string;
 
   infoDesplegable1: string;
   infoDesplegable2: string;
-  infoDesplegable3: string;
-
-  infoDesplegable4: string;
-  infoDesplegable5: string;
-  infoDesplegable6: string;
 }
 
-const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, subtitle, subtitle2, img2, img3, img4, info1, info2, infoDesplegable1, infoDesplegable2, infoDesplegable3, infoDesplegable4, infoDesplegable5, infoDesplegable6 } = Astro.props;
+const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplegable1, infoDesplegable2 } = Astro.props;
 
 ---
 
@@ -49,6 +35,7 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, subtitle, su
   <div class="why">
     <h2>{infoDesplegable2}</h2>
     <p>{infoDesplegable1}</p>
+    <slot />
   </div>
 	<!-- Cambios 
 	<h2>{subtitle2}</h2>
@@ -118,7 +105,6 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, subtitle, su
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
   }
 	.menu-info {
 		display: flex;

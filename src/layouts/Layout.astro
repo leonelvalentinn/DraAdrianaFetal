@@ -21,17 +21,15 @@ const { title } = Astro.props;
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<slot name="google"/>
 		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QSBXD7HCVZ"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWFPXNJDFT"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
-			gtag('config', 'G-QSBXD7HCVZ');
+			gtag('config', 'G-YWFPXNJDFT');
 		</script>
-
 		<!-- Meta Pixel Code -->
 		<script>
 			!function(f,b,e,v,n,t,s)
@@ -42,13 +40,13 @@ const { title } = Astro.props;
 			t.src=v;s=b.getElementsByTagName(e)[0];
 			s.parentNode.insertBefore(t,s)}(window, document,'script',
 			'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '1696462854172161');
+			fbq('init', '207557288900839');
 			fbq('track', 'PageView');
-		</script>
-		<noscript><img height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=1696462854172161&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Meta Pixel Code -->
+			</script>
+			<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=207557288900839&ev=PageView&noscript=1"
+			/></noscript>
+			<!-- End Meta Pixel Code -->
 	</head>
 	<body>
 		<slot />

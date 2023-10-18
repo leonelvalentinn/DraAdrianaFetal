@@ -1,3 +1,7 @@
+---
+import logo from "../img/logo.png";
+---
+
 <div class="container-title" id="ubicacion">
   <h2>UBICACIÓN</h2>
   <hr class="subrayado">
@@ -5,6 +9,7 @@
 <section class="container-ubicacion">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364675!2d-99.13777319031206!3d19.29992354483146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1692827397651!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <div class="direccion">
+    <img src={logo} alt="logo">
     <h3>Hospital Ángeles Acoxpa</h3>
     <p>Calz Acoxpa 430, Consultorio 45-A, Coapa, Ex-Hacienda Coapa, Tlalpan, 14308 Ciudad de México</p>
     <h3>LUNES A DOMINGO</h3>
@@ -59,6 +64,10 @@
   }
   .container-ubicacion .direccion p {
     color: white;
+  }
+  .direccion img {
+    max-width: 100px;
+    margin-bottom: 20px;
   }
   @media (min-width: 768px) {
     .container-ubicacion {

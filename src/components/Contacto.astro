@@ -1,11 +1,17 @@
 <section class="contacto">
   <div class="parallax-content">
-    <h2>CONTACTO</h2>
+    <h1>CONTACTO</h1>
     <hr class="subrayado">
     <div class="txt">
       <h3>No lo pienses más</h3>
       <h5>Permiteme acompañarte en esta hermosa etapa.</h5>
-      <a href="tel:5511119365" target="_blank"><button>AGENDAR CITA</button></a>
+      <h3>LUNES A DOMINGO</h3>
+      <h3>8:00hrs a 20:00hrs</h3>
+      <h3>5511119365</h3>
+      <div>
+        <a href="tel:5511119365" target="_blank"><button>AGENDAR CITA</button></a>
+        <a href="https://wa.me/525511119365?text=Buenas tardes, solicito información sobre " target="_blank"><button>ENVIAR MENSAJE</button></a>
+      </div>
     </div>
   </div>
 </section>
@@ -23,15 +29,16 @@
     background-size: cover;
     margin-top: 20px;
   }
-  .contacto h2 {
+  .contacto h1 {
     color: var(--morado-title);
     text-align: center;
+    font-weight: bold;
   }
   .contacto h3 {
     font-weight: bold;
   }
   .contacto h5 {
-    text-align: justify;
+    text-align: center;
   }
   .subrayado {
     border: 2px solid;
@@ -47,12 +54,15 @@
     flex-direction: column;
   }
   .parallax-content {
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(7px);
     border-radius: 20px;
     width: 100%;
   }
   .contacto a {
     text-decoration: none;
+  }
+  .contacto a[href="tel:5511119365"] {
+    margin-right: 10px;
   }
   .contacto button {
     padding: 12px 16px;

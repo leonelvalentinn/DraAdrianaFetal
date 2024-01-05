@@ -14,10 +14,12 @@ import img3 from "../img/servicio/revelacion/Imagen3.png";
 import img4 from "../img/servicio/revelacion/Imagen4.png";
 import img5 from "../img/servicio/revelacion/Imagen5.png";
 import Testimonios from '../components/Testimonios.astro';
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="Revelación del Sexo Fetal - Dra. Janeth Adriana García Cid">
+<Layout title="Revelación del Sexo Fetal - Dra. Janeth Adriana García Cid" description='Sabemos que conocer el sexo de tu bebé siempre será algo muy importante para ti, ¿Sabías que ya desde el primer trimestre podremos saber el sexo de tu bebé con una precisión de casi el 90%? A partir de la semana 16 ya se confirma el sexo en un 100%.'>
 	<main id="inicio">
+    <ViewTransitions />
 		<NavbarMovil/>
     <Servicio 
       title='Revelación del Sexo Fetal' 

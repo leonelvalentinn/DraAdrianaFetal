@@ -9,32 +9,36 @@ import facebook from "../img/facebook.png";
 import instagram from "../img/instagram.png";
 import doctoralia from "../img/doctoralia.png";
 import whatsapp from "../img/whatsapp.png";
+
+import Image from 'astro/components/Image.astro';
 ---
-<footer class="footer-container">
-  <div class="bg-footer">
-    <div class="items-text">
-      <a href="/"><h4>Inicio</h4></a>
-      <a href="/Trayectoria"><h4>Conóceme</h4></a>
-      <a href="/#servicios"><h4>Servicios</h4></a>
-      <a href=""><h4>Ginecología</h4></a>
-      <a href="#ubicacion"><h4>Ubicación</h4></a>
-      <a href=""><h4>Contacto</h4></a>
-    </div>
-    <div class="footer-up">
-      <div>
-        <h4>Certificada por:</h4>
-        <div class="certificados">
-          <img src={comego} alt="">
-          <img src={fetal} alt="">
-        </div>
+<footer class="container-f">
+  <div class="footer-container">
+    <div class="bg-footer">
+      <div class="items-text">
+        <a href="/"><h4>Inicio</h4></a>
+        <a href="/Trayectoria"><h4>Conóceme</h4></a>
+        <a href="/#servicios"><h4>Servicios</h4></a>
+        <a href="/Ginecologia"><h4>Ginecología</h4></a>
+        <a href="#ubicacion"><h4>Ubicación</h4></a>
+        <a href="#Contacto"><h4>Contacto</h4></a>
       </div>
-      <div class="pago">
-        <h4>Formas de pago:</h4>
-        <div class="container-pagos">
-          <img src={visa} alt="" class="visa-amex">
-          <img src={mastercard} alt="" class="master">
-          <img src={amex} alt="" class="visa-amex">
-          <img src={dinero} alt="" class="dinero">
+      <div class="footer-up">
+        <div>
+          <h4>Certificada por:</h4>
+          <div class="certificados">
+            <Image width="1200" height="1200" class:list="ImgFooter" src={comego} alt="Certificados" />
+            <Image width="1200" height="1200" class:list="ImgFooter" src={fetal} alt="Certificados" />
+          </div>
+        </div>
+        <div class="pago">
+          <h4>Formas de pago:</h4>
+          <div class="container-pagos">
+            <Image width="1200" height="1200" class:list="ImgFooter visa-amex" src={visa} alt="Formas de pago" />
+            <Image width="1200" height="1200" class:list="ImgFooter master" src={mastercard} alt="Formas de pago" />
+            <Image width="1200" height="1200" class:list="ImgFooter visa-amex" src={amex} alt="Formas de pago" />
+            <Image width="1200" height="1200" class:list="ImgFooter dinero" src={dinero} alt="Formas de pago" />
+          </div>
         </div>
       </div>
     </div>
@@ -43,16 +47,16 @@ import whatsapp from "../img/whatsapp.png";
     <h4>Síguenos en todas nuestras redes sociales</h4>
     <div class="icons-rs">
       <a href="https://www.facebook.com/profile.php?id=61550929773630" target="_blank">
-        <img src={facebook} alt="">
+        <Image width="1200" height="1200" class:list="ImgFooter" src={facebook} alt="Redes sociales" />
       </a>
       <a href="https://www.instagram.com/vidaprenatal_maternofetal/" target="_blank">
-        <img src={instagram} alt="">
+        <Image width="1200" height="1200" class:list="ImgFooter" src={instagram} alt="Redes sociales" />
       </a>
-      <a href="" target="_blank">
-        <img src={doctoralia} alt="">
+      <a href="#" target="_blank">
+        <Image width="1200" height="1200" class:list="ImgFooter" src={doctoralia} alt="Redes sociales" />
       </a>
       <a href="https://wa.me/525511119365?text=Buenas tardes, solicito información sobre " target="_blank">
-        <img src={whatsapp} alt="">
+        <Image width="1200" height="1200" class:list="ImgFooter" src={whatsapp} alt="Redes sociales" />
       </a>
     </div>
     <p>© Dra. Janeth Adriana García Cid. Todos los derechos reservados <br> Design by
@@ -62,15 +66,24 @@ import whatsapp from "../img/whatsapp.png";
 
 <!--Estilos-->
 <style>
+  .container-f {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--verde-agua-claro);
+  }
   .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
   }
   .bg-footer {
     width: 100%;
-    background-color: var(--verde-agua-claro);
   }
   .footer-up {
     width: 100%;
@@ -79,6 +92,7 @@ import whatsapp from "../img/whatsapp.png";
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
   }
   .footer-down {
     display: flex;
@@ -163,10 +177,14 @@ import whatsapp from "../img/whatsapp.png";
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 60px 1rem;
     }
     .items-text a {
       padding: 10px;
       transition: all 0.3s ease-in-out;
+    }
+    .pago {
+      margin: 0 1rem 0 1rem;
     }
     .items-text a:hover {
       transition: all 0.3s ease-in-out;

@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.10.3",
+    "astro": "^4.1.0",
     "swiper": "^10.2.0"
   }
 }

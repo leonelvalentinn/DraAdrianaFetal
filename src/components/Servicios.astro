@@ -1,5 +1,4 @@
 ---
-import usg10 from "../img/servicios/usg-10semanas.jpg";
 import usg11 from "../img/servicios/usg_11semanas.png";
 import usg2 from "../img/servicios/usg-segundo.jpg";
 import usgC from "../img/servicios/usg-crecimiento.jpg";
@@ -15,6 +14,8 @@ import prueba from "../img/prueba.jpg";
 import riesgo from "../img/servicios/embarazo-riesgo.jpg";
 import parto from "../img/servicios/parto.jpg";
 import cesarea from "../img/servicios/Cesarea.jpg";
+
+import Image from "astro/components/Image.astro";
 ---
 
 <div class="title" id="servicios">
@@ -26,44 +27,44 @@ import cesarea from "../img/servicios/Cesarea.jpg";
   <div class="container-grid">
     <div class="item-servicio parte-2">
       <h3>USG Génetico de Primer Trimestre 11-14 sdg</h3>
-      <img src={usg11} alt="">
+      <Image width="1200" height="1200" src={usg11} alt="bebé" class:list="ImgBebe" />
       <p>Evaluar el riesgo de síndrome de Down, así como determinar el riesgo de preeclampsia, restricción de crecimiento fetal y parto pretérmino.</p>
       <a href="/USG-11"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-3">
       <h3>USG Estructural Segundo Trimestre 18-24 sdg</h3>
-      <img src={usg2} alt="">
+      <Image width="1200" height="1200" src={usg2} alt="bebé" class:list="ImgBebe" />
       <p>Evaluar a detalle que todos los órganos del bebé se hayan formados adecuadamente, ayuda a descartar malformaciones fetales.</p>
       <a href="/USG-segundo-trimestre"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-4">
       <h3>USG Crecimiento</h3>
-      <img src={usgC} alt="">
+      <Image width="1200" height="1200" src={usgC} alt="bebé" class:list="ImgBebe" />
       <p>Determinar que el bebé vaya creciendo de forma adecuada para la edad gestacional. </p>
       <a href="/USG-crecimiento"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-5">
       <h3>Ultrasonido Doppler</h3>
-      <img src={usgD} alt="">
+      <Image width="1200" height="1200" src={usgD} alt="bebé" class:list="ImgBebe" />
       <p>Evaluación de algunos flujos de sangre en vasos sanguíneos del bebé que nos hablarán del bienestar fetal.</p>
       <a href="/USG-doppler"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-">
       <h3>Ultrasonidos de Embarazos Gemelares</h3>
-      <img src={usgG} alt="">
+      <Image width="1200" height="1200" src={usgG} alt="bebé" class:list="ImgBebe" />
       <p></p>
       <a href="/USG-gemelos"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-">
       <h3>USG 3D, 4D, 5D</h3>
-      <img src={D5} alt="">
+      <Image width="1200" height="1200" src={D5} alt="bebé" class:list="ImgBebe" />
       <p>A través de la más alta tecnología permite obtener imágenes más claras y nítidas de tu bebé, en cual conocerás a detalle facciones faciales de tu bebé que estamos seguros te enamorarán. </p>
       <a href="/USG-3D-4D-5D"><button>Conoce más</button></a>
     </div>
     <div class="parte-6">
       <div class="item-servicio parte-66">
         <h3>Revelación de Sexo Fetal</h3>
-        <img src={revelacion} alt="">
+        <Image width="1200" height="1200" src={revelacion} alt="bebé" class:list="ImgBebe" />
         <p></p>
         <a href="/revelacion-sexo"><button>Conoce más</button></a>
       </div>
@@ -76,13 +77,13 @@ import cesarea from "../img/servicios/Cesarea.jpg";
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Amniocentesis</h3>
-      <img src={procedimientos} alt="">
+      <Image width="1200" height="1200" src={procedimientos} alt="bebé" class:list="ImgBebe" transition:name="Img"/>
       <p></p>
       <a href="/Amniocentesis"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>Biopsia De Vellosidades Coriales</h3>
-      <img src={biopsia} alt="">
+      <Image width="1200" height="1200" src={biopsia} alt="bebé" class:list="ImgBebe" />
       <p></p>
       <a href="/Biopsia-vellosidades"><button>Conoce más</button></a>
     </div>
@@ -94,13 +95,13 @@ import cesarea from "../img/servicios/Cesarea.jpg";
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Duo Test</h3>
-      <img src={prueba} alt="">
+      <Image width="1200" height="1200" src={prueba} alt="bebé" class:list="ImgBebe" />
       <p>Marcadores bioquímicos séricos.</p>
       <a href="/Duo-test"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>ADN Fetal</h3>
-      <img src={adn} alt="">
+      <Image width="1200" height="1200" src={adn} alt="bebé" class:list="ImgBebe" />
       <p>Conocer si existe la posibilidad de presentar alguna alteración genética fetal durante el embarazo a través de una muestra sanguínea materna.</p>
       <a href="/adn-fetal"><button>Conoce más</button></a>
     </div>
@@ -112,25 +113,25 @@ import cesarea from "../img/servicios/Cesarea.jpg";
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Control Prenatal</h3>
-      <img src={control} alt="">
+      <Image width="1200" height="1200" src={control} alt="bebé" class:list="ImgBebe" />
       <p></p>
       <a href="/control-prenatal"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>Embarazos de Bajo <br> y Alto Riesgo</h3>
-      <img src={riesgo} alt="">
+      <Image width="1200" height="1200" src={riesgo} alt="bebé" class:list="ImgBebe" />
       <p></p>
       <a href="/embarazos-de-alto-riesgo"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-3">
       <h3>Atención de Parto</h3>
-      <img src={parto} alt="">
+      <Image width="1200" height="1200" src={parto} alt="bebé" class:list="ImgBebe" />
       <p></p>
       <a href="/parto"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-4">
       <h3>Cesárea</h3>
-      <img src={cesarea} alt="">
+      <Image width="1200" height="1200" src={cesarea} alt="bebé" class:list="ImgBebe" />
       <p></p>
       <a href="/Cesarea"><button>Conoce más</button></a>
     </div>
@@ -204,8 +205,9 @@ import cesarea from "../img/servicios/Cesarea.jpg";
     color: white;
     text-align: center;
   }
-  .servicios .container-grid .item-servicio img, .servicios-procedimientos .container-grid .item-servicio img  {
+  .servicios .container-grid .item-servicio .ImgBebe, .servicios-procedimientos .container-grid .item-servicio .ImgBebe  {
     width: 100%;
+    height: auto;
     margin: 15px 0 35px 0;
     border-radius: 40px;
   }

@@ -11,10 +11,17 @@ import gine1 from '../img/servicio/ginecologia/ginecologia-2.png';
 import gine2 from '../img/servicio/ginecologia/ginecologia-3.jpg';
 import gine3 from '../img/servicio/ginecologia/ginecologia-4.jpg';
 import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
+
+import Image from 'astro/components/Image.astro';
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import { fade } from 'astro:transitions';
 ---
 
-<Layout title="Ginecología - Dra. Janeth Adriana García Cid">
-	<main id="inicio">
+<Layout 
+      title="Ginecología - Dra. Janeth Adriana García Cid"
+      description='La ginecología es una rama de la medicina que se especializa en la salud reproductiva de la mujer. Los profesionales de la ginecología, conocidos como ginecólogos, se centran en el estudio, diagnóstico y tratamiento de diversas condiciones médicas relacionadas con el sistema reproductor femenino. Esto incluye órganos como el útero, los ovarios, las trompas de Falopio y la vagina.'>
+	<main id="inicio" transition:animate={fade({ duration: '0.5s' })}> 
+    <ViewTransitions />
 		<NavbarMovil/>
     <div class="title-img">
       <h2>Ginecología</h2>
@@ -24,7 +31,7 @@ import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
       <hr class="subrayado">
       <h3>Consulta Ginecológica</h3>
       <div class="container-planificacion">
-        <img src={gine} alt="">
+        <Image width="1200" height="1200" src={gine} alt="Ginecología" class:list="ImgGine"/>
         <div>
           <h4>Atenciones en:</h4>
           <ul>
@@ -42,21 +49,21 @@ import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
             <hr class="subrayado">
           </div>
           <div class="">
-            <img src={gine1} alt="">
+            <Image width="1200" height="1200" src={gine1} alt="Ginecología" class:list="ImgGine"/>
           </div>
         </div>
         <div class="item-gine">
           <h2>Vacuna del Virus de Papiloma Humano</h2>
           <hr class="subrayado">
           <div class="">
-            <img src={gine2} alt="">
+            <Image width="1200" height="1200" src={gine2} alt="Ginecología" class:list="ImgGine"/>
           </div>
         </div>
       </div>
       <h2>Métodos de Planificación Familiar </h2>
       <hr class="subrayado">
       <div class="container-planificacion reverse">
-        <img src={gine3} alt="">
+        <Image width="1200" height="1200" src={gine3} alt="Ginecología" class:list="ImgGine implante"/>
         <div>
           <h4>Atenciones en:</h4>
           <ul>
@@ -68,7 +75,7 @@ import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
       <h2 class="title-consulta">Cada Consulta Incluye</h2>
       <hr class="subrayado">
       <div class="container-planificacion">
-        <img src={gine4} alt="">
+        <Image width="1200" height="1200" src={gine4} alt="Ginecología" class:list="ImgGine"/>
         <ul>
           <li>Revisión de Historia clínica</li>
           <li>Toma de signos vitales, talla y peso</li>
@@ -137,8 +144,9 @@ import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
     align-items: center;
     flex-direction: column;
   }
-  .container-planificacion img, .container-grid-gineologia img{
+  .container-planificacion .ImgGine, .container-grid-gineologia .ImgGine{
     width: 100%;
+    height: auto;
     border-radius: 40px;
     margin: 15px 0 35px 0;
   }
@@ -156,6 +164,9 @@ import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
   .title-consulta {
     margin-top: 20px;
   }
+  .implante {
+    max-width: 670px;
+  }
   @media (min-width: 768px) {
     .container-planificacion {
       flex-direction: row;
@@ -164,8 +175,9 @@ import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
     .reverse {
       flex-direction: row-reverse;
     }
-    .container-planificacion img {
+    .container-planificacion .ImgGine {
       width: 50%;
+      height: auto;
     }
     .container-grid-gineologia {
       grid-template-columns: repeat(2, minmax(300px, 450px));

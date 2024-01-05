@@ -8,13 +8,14 @@ import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
 import procedimientos from "../img/procedimientos.jpg";
-import amniocentesis from "../img/servicio/amniocentesis/amniocentesis-.jpg";
-import amniocentesis1 from "../img/servicio/amniocentesis/amniocentesis-1.webp";
-import ultrasonido2 from "../img/servicio/usg-10/ultrasonido2.webp";
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="Amniocentesis - Dra. Janeth Adriana García Cid">
+<Layout 
+      title="Amniocentesis - Dra. Janeth Adriana García Cid"
+      description='Es una prueba en la que realizamos una punción abdominal en el vientre materno para poder llegar hasta el útero y obtener una muestra del líquido amniótico, el cual se analiza para el diagnóstico de enfermedades de los cromosomas como síndrome de Dawn. Esta prueba la realizamos guiados por ultrasonido'>
 	<main id="inicio">
+    <ViewTransitions />
 		<NavbarMovil/>
     <Servicio 
       title='¿En qué consiste esta prueba?' 

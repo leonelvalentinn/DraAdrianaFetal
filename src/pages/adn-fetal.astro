@@ -8,10 +8,14 @@ import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
 import adn from "../img/servicio/adn/adn-1.jpg";
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="ADN Fetal - Dra. Janeth Adriana García Cid">
+<Layout 
+      title="ADN Fetal - Dra. Janeth Adriana García Cid"
+      description='Permite conocer si existe la posibilidad de presentar alguna alteración genética fetal durante el embarazo a través de una muestra sanguínea materna.'>
 	<main id="inicio">
+    <ViewTransitions />
 		<NavbarMovil/>
     <Servicio 
       img={adn}

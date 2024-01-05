@@ -11,10 +11,14 @@ import ultrasonido2 from "../img/servicio/usg-10/ultrasonido2.webp";
 import biopsia from "../img/servicio/biopsia/biopsia.jpeg";
 import biopsia1 from "../img/servicio/biopsia/biopsia-1.jpg";
 import biopsia2 from "../img/servicio/biopsia/biopsia-2.jpg";
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="Biopsia de Vellosidades Coriales - Dra. Janeth Adriana García Cid">
+<Layout 
+      title="Biopsia de Vellosidades Coriales - Dra. Janeth Adriana García Cid"
+      description='La biopsia corial es un procedimiento de diagnóstico prenatal, mediante la obtención y posterior estudio genético de vellosidades coriales de la placenta.''>
 	<main id="inicio">
+    <ViewTransitions />
 		<NavbarMovil/>
     <Servicio 
       title='¿En qué consiste esta prueba?' 

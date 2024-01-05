@@ -6,13 +6,15 @@ import hospital from "../img/logos/logo-hospital.png";
 import unam from "../img/logos/logo-unam.jpg";
 import comego from '../img/logo-comego.png';
 import fetal from "../img/fetal-foundation.png";
+
+import Image from 'astro/components/Image.astro';
 ---
 
 <section class="cv-container">
   <h2>MI TRAYECTORIA</h2>
   <hr class="subrayado">
   <div class="container-txt">
-    <img class="img-hero" src={doc2} alt="">
+    <Image width="1200" height="1200" class="img-hero" src={doc2} alt="Dra. Adriana" />
     <div class="txt-imagen">
       Hola, soy la <strong>Dra. Janeth Adriana García Cid</strong>, realicé la carrera de médico cirujano 
       en la Universidad Autónoma del Estado de Hidalgo, posteriormente realicé la especialidad de 
@@ -39,7 +41,7 @@ import fetal from "../img/fetal-foundation.png";
     <h3>ACADÉMICO</h3>
     <div class="cedulas">
       <div class="item-cedulas">
-        <img src={uaeh} alt="">
+        <Image width="1200" height="1200" src={uaeh} alt="Logo UAEH" class:list='ImgLogo' />
         <div class="txt-cedula">
           <p>Universidad Autónoma del Estado de Hidalgo</p>
           <p>Médico Cirujano</p>
@@ -48,8 +50,8 @@ import fetal from "../img/fetal-foundation.png";
       </div>
       <div class="item-cedulas">
         <div>
-          <img src={unam} alt="">
-          <img src={hospital} alt="">
+          <Image width="1200" height="1200" src={unam} alt="Logo UNAM" class:list='ImgLogo' />
+          <Image width="1200" height="1200" src={hospital} alt="Logo Hospital" class:list='ImgLogo' />
         </div>
         <div class="txt-cedula">
           <p>Universidad Nacional Autónoma de México</p>
@@ -60,8 +62,8 @@ import fetal from "../img/fetal-foundation.png";
       </div>
       <div class="item-cedulas parte-5">
         <div class="container-img">
-          <img src={unam} alt="">
-          <img src={inper} alt="">
+          <Image width="1200" height="1200" src={unam} alt="Logo UNAM" class:list='ImgLogo' />
+          <Image width="1200" height="1200" src={inper} alt="Logo INPER" class:list='ImgLogo' />
         </div>
         <div class="txt-cedula">
           <p>Universidad Nacional Autónoma de México</p>
@@ -76,7 +78,7 @@ import fetal from "../img/fetal-foundation.png";
     <h3>CERTIFICACIONES</h3>
     <div class="cedulas">
       <div class="item-cedulas">
-        <img src={comego} alt="">
+        <Image width="1200" height="1200" src={comego} alt="Logo COMEGO" class:list='ImgLogo' />
         <div class="txt-cedula">
           <p>Consejo Mexicano de Ginecología y Obstetricia</p>
           <p>Ginecología y Obstetricia</p>
@@ -86,7 +88,7 @@ import fetal from "../img/fetal-foundation.png";
         </div>
       </div>
       <div class="item-cedulas">
-        <img src={fetal} alt="">
+        <Image width="1200" height="1200" src={fetal} alt="Logo Fetal" class:list='ImgLogo' />
         <div class="txt-cedulas">
           <p>The Fetal Medicine Foundation</p>
           <p>Medicina Materno Fetal </p>
@@ -161,8 +163,9 @@ import fetal from "../img/fetal-foundation.png";
   .cv-container h3 {
     margin-top: 20px;
   }
-  .cv-container img {
+  .cv-container .img-hero {
     width: 100%;
+    height: auto;
     margin: 15px 0 35px 0;
   }
   .cv-container .container-txt .img-hero {
@@ -190,8 +193,9 @@ import fetal from "../img/fetal-foundation.png";
     justify-content: center;
     margin: 20px 0 20px 0;
   }
-  .cedulas .item-cedulas img {
+  .cedulas .item-cedulas .ImgLogo {
     width: 80px;
+    height: auto;
     height: auto;
   }
   .txt-cedula, .txt-cedulas {
@@ -216,7 +220,7 @@ import fetal from "../img/fetal-foundation.png";
     .txt-imagen {
       margin-top: 5%;
     }
-    .cv-container img {
+    .cv-container .img-hero {
       width: 40%;
       margin: 15px 40px 0 0;
     }
@@ -237,8 +241,9 @@ import fetal from "../img/fetal-foundation.png";
       display: grid;
       grid-template-columns: repeat(2, minmax(min-content, 600px));
     }
-    .cedulas .item-cedulas img {
+    .cedulas .item-cedulas .img-hero {
       width: 100px;
+      height: auto;
       margin: 0 0 30px 0;
     }
     .cedulas .parte-5 {

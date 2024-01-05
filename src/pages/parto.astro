@@ -8,10 +8,12 @@ import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
 import parto1 from "../img/servicio/parto/parto-1.jpg";
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="Atención de Parto - Dra. Janeth Adriana García Cid">
+<Layout title="Atención de Parto - Dra. Janeth Adriana García Cid" description='El término parto respetado hace referencia  hacia el respeto a los derechos de las madres en el momento del nacimiento.'>
 	<main id="inicio">
+    <ViewTransitions />
 		<NavbarMovil/>
     <Servicio 
       title='¡Tienes derecho a un nacimiento humanizado!' 

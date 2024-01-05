@@ -1,22 +1,25 @@
 ---
+import Image from 'astro/components/Image.astro';
 import logo from '../img/logo-hor2.png';
 ---
 
-<div class="navbar-mov">
-  <img src={logo} alt="logo">
-  <a id="btn-menu" class="btn-menu">
-    <i class="bi bi-list"></i>
-  </a>
-  <a id="btn-close" class="btn-menu btn-menu-close" style="display: none;">
-    <i class="bi bi-x-lg"></i>
-  </a>
-  <div class="menu-desktop">
-    <a href="/" class="overlay-item">Inicio</a>
-    <a href="/Trayectoria" class="overlay-item">Conóceme</a>
-    <a href="/#servicios" class="overlay-item">Servicios</a>
-    <a href="/Ginecologia" class="overlay-item">Ginecología</a>
-    <a href="#ubicacion" class="overlay-item">Ubicación</a>
-    <button><a href="tel:5511119365" target="_blank">5511119365</a></button>
+<div class="container-nav">
+  <div class="navbar-mov">
+    <Image src={logo} width="600" height="600" alt='Logo Vida Prenatal' class:list="logoImg" id='logo'/>
+    <a id="btn-menu" class="btn-menu">
+      <i class="bi bi-list"></i>
+    </a>
+    <a id="btn-close" class="btn-menu btn-menu-close" style="display: none;">
+      <i class="bi bi-x-lg"></i>
+    </a>
+    <div class="menu-desktop">
+      <a href="/" class="overlay-item">Inicio</a>
+      <a href="/Trayectoria" class="overlay-item">Conóceme</a>
+      <a href="/#servicios" class="overlay-item">Servicios</a>
+      <a href="/Ginecologia" class="overlay-item">Ginecología</a>
+      <a href="#ubicacion" class="overlay-item">Ubicación</a>
+      <button><a href="tel:5511119365" target="_blank">5511119365</a></button>
+    </div>
   </div>
 </div>
 <div class="overlay-menu" id="overlay-menu">
@@ -38,16 +41,26 @@ import logo from '../img/logo-hor2.png';
 
 <!--Estilos-->
 <style>
-  .navbar-mov {
-    height: 100px;
+  .container-nav {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgba(144, 212, 198, 0.493);
   }
-  .navbar-mov img {
+  .navbar-mov {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-mov .logoImg {
     max-width: 200px;
+    height: auto;
     margin-left: 5%;
+    cursor: pointer;
   }
   .btn-menu {
     width: 50px;
@@ -115,7 +128,7 @@ import logo from '../img/logo-hor2.png';
   }
   .menu-desktop button a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   .menu-desktop button {
     border-style: none;
@@ -147,8 +160,9 @@ import logo from '../img/logo-hor2.png';
   }
   /*Media query's */
   @media (min-width: 425px) {
-    .navbar-mov img {
+    .navbar-mov .logoImg {
       max-width: 300px;
+      height: auto;
     }
   }
   @media (min-width: 768px) {
@@ -158,9 +172,10 @@ import logo from '../img/logo-hor2.png';
     .btn-menu, .btn-menu-close {
       display: none;
     }
-    .navbar-mov img {
+    .navbar-mov .logoImg {
       margin-left: 10px;
       max-width: 230px;
+      height: auto;
     }
   }
   @media (min-width: 1024px) {
@@ -183,8 +198,9 @@ import logo from '../img/logo-hor2.png';
     .navbar-mov {
       justify-content: space-between;
     }
-    .navbar-mov img {
+    .navbar-mov .logoImg {
       max-width: 350px;
+      height: auto;
       margin-left: 10px;
       padding: 0 30px;
     }
@@ -216,4 +232,9 @@ import logo from '../img/logo-hor2.png';
     document.getElementById("btn-menu").style.animation = "open 0.5s ease-in-out";
     document.getElementById("btn-close").style.display = "none";
   }
+
+  const logo = document.getElementById('logo')
+  logo.addEventListener('click', () => {
+    location.href = '/'
+  })
 </script>

@@ -7,10 +7,13 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Contacto from '../components/Contacto.astro';
 import Ubicacion from '../components/Ubicacion.astro';
 import Up from '../components/Up.astro';
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="Trayectoria | Dra. Janeth Adriana García Cid">
+<Layout title="Trayectoria | Dra. Janeth Adriana García Cid" 
+        description='Trayectoria de la Dra. Janeth Adriana García Cid, su historia acádemica y experiencia.'>
   <main>
+    <ViewTransitions />
     <NavbarMovil/>
     <HeroTrayectoria />
     <Contacto />

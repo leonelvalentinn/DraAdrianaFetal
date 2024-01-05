@@ -14,10 +14,12 @@ import img3 from "../img/servicio/usg-gemelar/Imagen3.jpg"
 import img4 from "../img/servicio/usg-gemelar/Imagen4.jpg"
 import img5 from "../img/servicio/usg-gemelar/Imagen5.jpg"
 import Testimonios from '../components/Testimonios.astro';
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="USG de Embarazos Gemelares - Dra. Janeth Adriana García Cid">
+<Layout title="USG de Embarazos Gemelares - Dra. Janeth Adriana García Cid" description=' Evaluación de la corionicidad, es decir  si se trata de un  embarazo gemelar con una placenta  en la que ambos gemelos la comparten o bien dos placentas, una para cada gemelo, ya que de acuerdo a ello será la vigilancia en estos embarazos'>
 	<main id="inicio">
+    <ViewTransitions />
 		<NavbarMovil/>
     <Servicio 
       title='¿Qué se realiza en el ultrasonido de estos embarazos?' 

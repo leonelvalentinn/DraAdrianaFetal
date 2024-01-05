@@ -14,10 +14,14 @@ import img4 from "../img/servicio/usg-11/Imagen4.jpg";
 import img5 from "../img/servicio/usg-11/Imagen5.jpg";
 import Testimonios from '../components/Testimonios.astro';
 import Contacto2 from '../components/Contacto2.astro';
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="USG de Menos de 11 Semanas - Dra. Janeth Adriana García Cid">
+<Layout 
+      title="USG de Menos de 11 Semanas - Dra. Janeth Adriana García Cid"
+      description='Evalúa el riesgo o probabilidad individual de alteraciones cromosómicas  del feto (la más común síndrome de Down) a través de la evaluación de marcadores ecográficos  en el feto: hueso nasal, translucencia nucal (líquido en la nuca), ductus venoso, regurgitación tricuspídea.'>
 	<main id="inicio">
+    <ViewTransitions />
 		<NavbarMovil/>
     <Servicio 
       title='¿Por qué es importante  realizar este ultrasonido?' 

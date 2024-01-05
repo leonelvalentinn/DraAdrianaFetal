@@ -21,10 +21,13 @@ import img7 from "../img/servicio/usg-18/Imagen7.jpg";
 import img8 from "../img/servicio/usg-18/Imagen8.png";
 import img9 from "../img/servicio/usg-18/Imagen9.png";
 import Testimonios from '../components/Testimonios.astro';
+import Image from 'astro/components/Image.astro';
+import ViewTransitions from 'astro/components/ViewTransitions.astro';
 ---
 
-<Layout title="USG Estructural Segundo Trimestre 18-24 sdg - Dra. Janeth Adriana García Cid">
+<Layout title="USG Estructural Segundo Trimestre 18-24 sdg - Dra. Janeth Adriana García Cid" description='Se realiza la evaluación estructural anatómica del feto de manera detallada, permite identificar que se hayan formado adecuadamente todos los órganos del bebé, permite detectar alteraciones o defectos estructurales.'>
 	<main id="inicio">
+    <ViewTransitions />
 		<NavbarMovil/>
     <Servicio 
       title='¿En qué me beneficia realizarme este ultrasonido?' 
@@ -49,17 +52,17 @@ import Testimonios from '../components/Testimonios.astro';
         <button slot="btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
         <button slot="btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
         <button slot="btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-        <div slot="item" class="carousel-item">
-          <img src={img6} class="d-block w-100" alt="...">
+        <div slot="item" class="carousel-item imgslider">
+          <Image width="1200" height="1200" src={img6} class:list="d-block w-100 ImgSlider" alt="Slider Img">
         </div>
-        <div slot="item" class="carousel-item">
-          <img src={img7} class="d-block w-100" alt="...">
+        <div slot="item" class="carousel-item imgslider">
+          <Image width="1200" height="1200" src={img7} class:list="d-block w-100 ImgSlider" alt="Slider Img">
         </div>
-        <div slot="item" class="carousel-item">
-          <img src={img8} class="d-block w-100" alt="...">
+        <div slot="item" class="carousel-item imgslider">
+          <Image width="1200" height="1200" src={img8} class:list="d-block w-100 ImgSlider" alt="Slider Img">
         </div>
-        <div slot="item" class="carousel-item">
-          <img src={img9} class="d-block w-100" alt="...">
+        <div slot="item" class="carousel-item imgslider">
+          <Image width="1200" height="1200" src={img9} class:list="d-block w-100 ImgSlider" alt="Slider Img">
         </div>
       </Testimonios>
         
@@ -70,3 +73,10 @@ import Testimonios from '../components/Testimonios.astro';
 		<Footer/>
 	</main>
 </Layout>
+
+<style>
+  .imgslider img {
+    width: 100%;
+    height: auto;
+  }
+</style>

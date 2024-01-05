@@ -1,13 +1,14 @@
 ---
 import bebe from "../img/foto-bb.jpg";
 import doc from "../img/doctora1.jpg";
+import Image from "astro/components/Image.astro";
 ---
 
 <section class="hero-container" id="inicio">
   <h2>MATERNO FETAL</h2>
   <hr class="subrayado">
   <div class="container-materno">
-    <img src={bebe} alt="">
+    <Image src={bebe} width='1200' height='1200' alt="Imagen mamá embarazada" class:list='ImgHero'/>
     <p>La Medicina Materno Fetal, se especializa en el manejo del embarazo de alto riesgo ya 
       sea por condición materna o fetal; con un enfoque amplio en el conocimiento de las complicaciones 
       obstétricas y sus efectos sobre la madre y el feto.
@@ -23,7 +24,7 @@ import doc from "../img/doctora1.jpg";
     <h2>¿POR QUÉ SOMOS TU MEJOR OPCIÓN?</h2>
     <hr class="subrayado">
     <div class="container-why">
-      <img src={doc} alt="">
+      <Image src={doc} width='1200' height='1200' alt="Doctora Adriana" class:list='ImgHero'/>
       <div>
         <p>
           Tenemos una formación amplia en el diagnóstico prenatal utilizando el ultrasonido y 
@@ -61,8 +62,9 @@ import doc from "../img/doctora1.jpg";
     flex-direction: column;
     padding: 6%;
   }
-  .hero-container img {
+  .hero-container .ImgHero {
     width: 100%;
+    height: auto;
     border-radius: 40px;
     margin: 15px 0 35px 0;
   }
@@ -133,15 +135,17 @@ import doc from "../img/doctora1.jpg";
     .hero-container {
       padding: 30px 6% 6% 6%;
     }
-    .hero-container .container-materno img {
+    .hero-container .container-materno .ImgHero {
       width: 50%;
+      height: auto;
       margin-right: 25px;
     }
     .hero-container p {
       font-size: 1.1em;
     }
-    .hero-container .container-why img {
+    .hero-container .container-why .ImgHero {
       width: 50%;
+      height: auto;
       margin-left: 25px;
     }
     .container-why {

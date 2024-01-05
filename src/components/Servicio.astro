@@ -1,4 +1,5 @@
 ---
+import Image from 'astro/components/Image.astro';
 interface Props {
 	title: string;
 	punto1: string;
@@ -22,7 +23,7 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplega
   <h2>{title}</h2>
   <hr class="subrayado">
   <div class="container-materno">
-    <img src={img} alt="">
+    <Image src={img} alt="Imagen Presentación" width="1200" height="1200" class:list='ImgPre' transition:name='Img'/>
     <ul class="container-list" id="container-list">
       <li>{punto1}</li>
       <li>{punto2}</li>
@@ -77,8 +78,9 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplega
     flex-direction: column;
     padding: 6%;
   }
-  .hero-container img {
+  .hero-container .ImgPre {
     width: 100%;
+    height: auto;
     border-radius: 40px;
     margin: 15px 0 35px 0;
   }
@@ -202,8 +204,9 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplega
       justify-content: center;
       align-items: center;
     }
-    .hero-container .container-desplegable img {
+    .hero-container .container-desplegable .ImgPre {
       width: 50%;
+      height: auto;
       margin-left: 30px;
     }
     .view {
@@ -226,15 +229,17 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplega
     .hero-container {
       padding: 30px 6% 6% 6%;
     }
-    .hero-container .container-materno img {
+    .hero-container .container-materno .ImgPre {
       width: 50%;
+      height: auto;
       margin-right: 25px;
     }
     .hero-container p {
       font-size: 1.3em;
     }
-    .hero-container .container-why img {
+    .hero-container .container-why .ImgPre {
       width: 50%;
+      height: auto;
       margin-left: 25px;
     }
     .container-why {

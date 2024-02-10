@@ -7,19 +7,14 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import revelacion1 from "../img/servicios/revelacion.jpg";
-import revelacion from "../img/servicio/revelacion/revelacion.png";
-import img2 from "../img/servicio/revelacion/Imagen2.png";
-import img3 from "../img/servicio/revelacion/Imagen3.png";
-import img4 from "../img/servicio/revelacion/Imagen4.png";
-import img5 from "../img/servicio/revelacion/Imagen5.png";
 import Testimonios from '../components/Testimonios.astro';
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+ 
 ---
 
 <Layout title="Revelación del Sexo Fetal - Dra. Janeth Adriana García Cid" description='Sabemos que conocer el sexo de tu bebé siempre será algo muy importante para ti, ¿Sabías que ya desde el primer trimestre podremos saber el sexo de tu bebé con una precisión de casi el 90%? A partir de la semana 16 ya se confirma el sexo en un 100%.'>
 	<main id="inicio">
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='Revelación del Sexo Fetal' 
@@ -29,16 +24,17 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4=''
       punto5=''
       punto6=''
-      img={revelacion1}
+      img='/servicios/revelacion.webp'
       infoDesplegable1=''
       infoDesplegable2=''
+      transition='Revelacion'
       />
       <Testimonios 
-        img1={revelacion}
-        img2={img2}
-        img3={img3}
-        img4={img4}
-        img5={img5}
+        img1='/servicio/revelacion.webp'
+        img2='/servicio/Imagen2.webp'
+        img3='/servicio/Imagen3.webp'
+        img4='/servicio/Imagen4.webp'
+        img5='/servicio/Imagen5.webp'
       />
     <Contacto2 />
 		<Ubicacion/>

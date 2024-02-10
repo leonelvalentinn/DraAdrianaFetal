@@ -9,15 +9,14 @@ import Contacto from '../components/Contacto.astro';
 import Ubicacion from '../components/Ubicacion.astro';
 import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Up from '../components/Up.astro';
-import Navbar from "../components/Navbar.astro";
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
----
+import Loader from '../components/Loader.astro'
+--- 
 
 <Layout 
 	title="Vida Prenatal | Dra. Janeth Adriana García Cid"
-	description='La Dra. Janeth Adriana García Cid te da la bienvenida a su página web, donde encontrarás un espacio dedicado a la salud materno-fetal con un enfoque especializado en el cuidado integral de tu bebé antes de nacer. Como ginecóloga con experiencia y dedicación, la Dra. García Cid se compromete a brindar atención médica de calidad, respaldada por su conocimiento y pasión por la salud de la mujer y el desarrollo fetal. Explora nuestra página para obtener información detallada sobre los servicios que ofrecemos, desde consultas prenatales hasta asesoramiento especializado en situaciones de alto riesgo. Nos enorgullece trabajar en colaboración con futuras madres para garantizar un embarazo saludable y un parto seguro. Además de nuestra experiencia clínica, en la página encontrarás recursos educativos y artículos informativos que te ayudarán a comprender mejor cada etapa del embarazo y a tomar decisiones informadas sobre tu salud y la de tu bebé. Creemos en el empoderamiento de las mujeres a través del conocimiento, y estamos aquí para apoyarte en este emocionante viaje hacia la maternidad. No dudes en ponerte en contacto con nosotros para programar una cita o para resolver cualquier pregunta que puedas tener. La Dra. Janeth Adriana García Cid y su equipo están comprometidos a proporcionar el más alto nivel de atención médica y a acompañarte en este hermoso camino hacia la llegada de tu bebé. ¡Gracias por confiar en nosotros para cuidar de ti y de tu preciado tesoro antes de nacer!'>
+	description='Experiencia y dedicación para un embarazo saludable: Bienvenido a la página de la Dra. Janeth Adriana García Cid en Medicina Materno Fetal. Nos especializamos en cuidados avanzados para mamás y bebés, ofreciendo diagnósticos precisos, tratamiento experto y apoyo compasivo durante todo el embarazo. Desde consultas prenatales hasta cuidados especializados para embarazos de alto riesgo, confía en nosotros para brindarte la atención más avanzada y personalizada posible. Tu bienestar y el de tu bebé están en buenas manos con nuestro equipo líder en medicina materno fetal.'>
 	<main id="inicio">
-		<ViewTransitions  />
+		<Loader />
 		<NavbarMovil/>
 		<Hero/>
 		<Servicios/>

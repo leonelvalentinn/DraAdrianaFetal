@@ -7,19 +7,14 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import usgC from "../img/servicio/usg-crecimiento/ultrasonido-1.jpg";
 import Testimonios from '../components/Testimonios.astro';
-import img1 from "../img/servicio/usg-crecimiento/Imagen1.png"
-import img2 from "../img/servicio/usg-crecimiento/Imagen2.jpg"
-import img3 from "../img/servicio/usg-crecimiento/Imagen3.png"
-import img4 from "../img/servicio/usg-crecimiento/ultrasonido-1.jpg"
-import img5 from "../img/servicio/usg-crecimiento/ultrasonido-2.png"
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+ 
 ---
 
 <Layout title="USG de Crecimiento - Dra. Janeth Adriana García Cid" description='Evaluar que el bebé esté creciendo de forma adecuada de acuerdo a su edad gestacional'>
 	<main id="inicio">
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='¿Qué se realiza en este ultrasonido?' 
@@ -29,16 +24,16 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4='❤ Evaluación de la placenta.' 
       punto5='❤ Evaluación de la cantidad de líquido amniótico' 
       punto6=''    
-      img={usgC}
+      img='/servicio/usg-crecimiento/ultrasonido-1.webp'
       infoDesplegable1='Todas las pacientes embarazadas deben realizarse este ultrasonido después de la semana 29-32 de gestación y solo deberá ser realizado por un médico especializado y altamente capacitado, como un médico materno fetal.' 
       infoDesplegable2='Importante'
     />
       <Testimonios 
-        img1={img1}
-        img2={img2}
-        img3={img3}
-        img4={img4}
-        img5={img5}
+        img1='/servicio/usg-crecimiento/Imagen1.webp'
+        img2='/servicio/usg-crecimiento/Imagen2.webp'
+        img3='/servicio/usg-crecimiento/Imagen3.webp'
+        img4='/servicio/usg-crecimiento/ultrasonido-1.webp'
+        img5='/servicio/usg-crecimiento/ultrasonido-2.webp'
       >
 
       </Testimonios>

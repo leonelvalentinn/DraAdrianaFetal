@@ -1,17 +1,4 @@
----
-import comego from '../img/logo-comego.png';
-import fetal from "../img/fetal-foundation.png";
-import visa from "../img/visa.png";
-import mastercard from "../img/mastercard.png";
-import amex from "../img/american-express.png";
-import dinero from "../img/dinero.png";
-import facebook from "../img/facebook.png";
-import instagram from "../img/instagram.png";
-import doctoralia from "../img/doctoralia.png";
-import whatsapp from "../img/whatsapp.png";
 
-import Image from 'astro/components/Image.astro';
----
 <footer class="container-f">
   <div class="footer-container">
     <div class="bg-footer">
@@ -27,17 +14,17 @@ import Image from 'astro/components/Image.astro';
         <div>
           <h4>Certificada por:</h4>
           <div class="certificados">
-            <Image width="1200" height="1200" class:list="ImgFooter" src={comego} alt="Certificados" />
-            <Image width="1200" height="1200" class:list="ImgFooter" src={fetal} alt="Certificados" />
+            <img class="ImgFooter" src='/logo-comego.png' alt="Certificados" />
+            <img class="ImgFooter" src='/fetal-foundation.webp' alt="Certificados" />
           </div>
         </div>
         <div class="pago">
           <h4>Formas de pago:</h4>
           <div class="container-pagos">
-            <Image width="1200" height="1200" class:list="ImgFooter visa-amex" src={visa} alt="Formas de pago" />
-            <Image width="1200" height="1200" class:list="ImgFooter master" src={mastercard} alt="Formas de pago" />
-            <Image width="1200" height="1200" class:list="ImgFooter visa-amex" src={amex} alt="Formas de pago" />
-            <Image width="1200" height="1200" class:list="ImgFooter dinero" src={dinero} alt="Formas de pago" />
+            <img class="ImgFooter visa-amex" src='/visa.webp' alt="Formas de pago" />
+            <img class="ImgFooter master" src='/mastercard.webp' alt="Formas de pago" />
+            <img class="ImgFooter visa-amex" src='/american-express.webp' alt="Formas de pago" />
+            <img class="ImgFooter dinero" src='/dinero.webp' alt="Formas de pago" />
           </div>
         </div>
       </div>
@@ -47,25 +34,32 @@ import Image from 'astro/components/Image.astro';
     <h4>Síguenos en todas nuestras redes sociales</h4>
     <div class="icons-rs">
       <a href="https://www.facebook.com/profile.php?id=61550929773630" target="_blank">
-        <Image width="1200" height="1200" class:list="ImgFooter" src={facebook} alt="Redes sociales" />
+        <img class="ImgFooter" src='/facebook.png' alt="Facebook" />
       </a>
       <a href="https://www.instagram.com/vidaprenatal_maternofetal/" target="_blank">
-        <Image width="1200" height="1200" class:list="ImgFooter" src={instagram} alt="Redes sociales" />
+        <img class="ImgFooter" src='/instagram.webp' alt="Instagram" />
       </a>
       <a href="#" target="_blank">
-        <Image width="1200" height="1200" class:list="ImgFooter" src={doctoralia} alt="Redes sociales" />
+        <img class="ImgFooter" src='/doctoralia.png' alt="Doctoralia" />
       </a>
       <a href="https://wa.me/525511119365?text=Buenas tardes, solicito información sobre " target="_blank">
-        <Image width="1200" height="1200" class:list="ImgFooter" src={whatsapp} alt="Redes sociales" />
+        <img class="ImgFooter" src='/whatsapp.webp' alt="Whatsapp" />
       </a>
     </div>
     <p>© Dra. Janeth Adriana García Cid. Todos los derechos reservados <br> Design by
-      <a href="https://dentarios.com.mx/programacion.php" target="_blank">Agencia Dentarios</a> </p>
+      <a href="https://agenciainspiracion.com" target="_blank">Agencia Inspiración Creativa</a> </p>
   </div>
 </footer>
 
 <!--Estilos-->
 <style>
+  a {
+    transition: all 0.2s linear;
+  }
+  .footer-down a[href="https://agenciainspiracion.com"]:hover {
+    transition: all 0.2s linear;
+    text-decoration: underline;
+  }
   .container-f {
     width: 100%;
     display: flex;

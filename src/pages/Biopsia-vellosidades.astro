@@ -7,18 +7,15 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import ultrasonido2 from "../img/servicio/usg-10/ultrasonido2.webp";
-import biopsia from "../img/servicio/biopsia/biopsia.jpeg";
-import biopsia1 from "../img/servicio/biopsia/biopsia-1.jpg";
-import biopsia2 from "../img/servicio/biopsia/biopsia-2.jpg";
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+ 
 ---
 
 <Layout 
       title="Biopsia de Vellosidades Coriales - Dra. Janeth Adriana García Cid"
       description='La biopsia corial es un procedimiento de diagnóstico prenatal, mediante la obtención y posterior estudio genético de vellosidades coriales de la placenta.''>
 	<main id="inicio">
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='¿En qué consiste esta prueba?' 
@@ -28,7 +25,7 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4='' 
       punto5=''
       punto6=''     
-      img={biopsia}
+      img='/servicio/biopsia.webp'
       infoDesplegable1='Esta prueba solo deberá ser realizado por un médico especializado y altamente capacitado, como un médico materno fetal.'
       infoDesplegable2='Importante'
     />

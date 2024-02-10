@@ -1,20 +1,8 @@
----
-import doc2 from "../img/doc-2.jpg";
-import uaeh from "../img/logos/logo-uaeh.jpg";
-import inper from "../img/logos/INPer_logo.jpg";
-import hospital from "../img/logos/logo-hospital.png";
-import unam from "../img/logos/logo-unam.jpg";
-import comego from '../img/logo-comego.png';
-import fetal from "../img/fetal-foundation.png";
-
-import Image from 'astro/components/Image.astro';
----
-
 <section class="cv-container">
   <h2>MI TRAYECTORIA</h2>
   <hr class="subrayado">
   <div class="container-txt">
-    <Image width="1200" height="1200" class="img-hero" src={doc2} alt="Dra. Adriana" />
+    <img class="img-hero" src='/doc-2.webp' alt="Dra. Adriana" />
     <div class="txt-imagen">
       Hola, soy la <strong>Dra. Janeth Adriana García Cid</strong>, realicé la carrera de médico cirujano 
       en la Universidad Autónoma del Estado de Hidalgo, posteriormente realicé la especialidad de 
@@ -41,7 +29,7 @@ import Image from 'astro/components/Image.astro';
     <h3>ACADÉMICO</h3>
     <div class="cedulas">
       <div class="item-cedulas">
-        <Image width="1200" height="1200" src={uaeh} alt="Logo UAEH" class:list='ImgLogo' />
+        <img src='/logo-uaeh.webp' alt="Logo UAEH" class='ImgLogo' />
         <div class="txt-cedula">
           <p>Universidad Autónoma del Estado de Hidalgo</p>
           <p>Médico Cirujano</p>
@@ -50,8 +38,8 @@ import Image from 'astro/components/Image.astro';
       </div>
       <div class="item-cedulas">
         <div>
-          <Image width="1200" height="1200" src={unam} alt="Logo UNAM" class:list='ImgLogo' />
-          <Image width="1200" height="1200" src={hospital} alt="Logo Hospital" class:list='ImgLogo' />
+          <img src='/logo-unam.webp' alt="Logo UNAM" class='ImgLogo' />
+          <img src='/logo-hospital.webp' alt="Logo Hospital" class='ImgLogo' />
         </div>
         <div class="txt-cedula">
           <p>Universidad Nacional Autónoma de México</p>
@@ -62,8 +50,8 @@ import Image from 'astro/components/Image.astro';
       </div>
       <div class="item-cedulas parte-5">
         <div class="container-img">
-          <Image width="1200" height="1200" src={unam} alt="Logo UNAM" class:list='ImgLogo' />
-          <Image width="1200" height="1200" src={inper} alt="Logo INPER" class:list='ImgLogo' />
+          <img src='/logo-unam.webp' alt="Logo UNAM" class='ImgLogo' />
+          <img src='/INPer_logo.webp' alt="Logo INPER" class='ImgLogo' />
         </div>
         <div class="txt-cedula">
           <p>Universidad Nacional Autónoma de México</p>
@@ -78,7 +66,7 @@ import Image from 'astro/components/Image.astro';
     <h3>CERTIFICACIONES</h3>
     <div class="cedulas">
       <div class="item-cedulas">
-        <Image width="1200" height="1200" src={comego} alt="Logo COMEGO" class:list='ImgLogo' />
+        <img src='/logo-comego.png' alt="Logo COMEGO" class='ImgLogo' />
         <div class="txt-cedula">
           <p>Consejo Mexicano de Ginecología y Obstetricia</p>
           <p>Ginecología y Obstetricia</p>
@@ -88,7 +76,7 @@ import Image from 'astro/components/Image.astro';
         </div>
       </div>
       <div class="item-cedulas">
-        <Image width="1200" height="1200" src={fetal} alt="Logo Fetal" class:list='ImgLogo' />
+        <img src='/fetal-foundation.webp' alt="Logo Fetal" class='ImgLogo' />
         <div class="txt-cedulas">
           <p>The Fetal Medicine Foundation</p>
           <p>Medicina Materno Fetal </p>
@@ -196,7 +184,7 @@ import Image from 'astro/components/Image.astro';
   .cedulas .item-cedulas .ImgLogo {
     width: 80px;
     height: auto;
-    height: auto;
+    margin: 15px 0 35px;
   }
   .txt-cedula, .txt-cedulas {
     display: flex;
@@ -241,7 +229,7 @@ import Image from 'astro/components/Image.astro';
       display: grid;
       grid-template-columns: repeat(2, minmax(min-content, 600px));
     }
-    .cedulas .item-cedulas .img-hero {
+    .cedulas .item-cedulas .ImgLogo {
       width: 100px;
       height: auto;
       margin: 0 0 30px 0;

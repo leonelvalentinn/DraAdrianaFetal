@@ -1,5 +1,4 @@
 ---
-import Image from 'astro/components/Image.astro';
 interface Props {
 	title: string;
 	punto1: string;
@@ -9,13 +8,14 @@ interface Props {
   punto5: string;
   punto6: string;
 
-	img: any;
+	img: string;
+  transition?: string
 
   infoDesplegable1: string;
   infoDesplegable2: string;
 }
 
-const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplegable1, infoDesplegable2 } = Astro.props;
+const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplegable1, infoDesplegable2, transition } = Astro.props;
 
 ---
 
@@ -23,7 +23,7 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplega
   <h2>{title}</h2>
   <hr class="subrayado">
   <div class="container-materno">
-    <Image src={img} alt="Imagen Presentación" width="1200" height="1200" class:list='ImgPre' transition:name='Img'/>
+    <img src={img} alt="Imagen Presentación" class='ImgPre' transition:name={transition}/>
     <ul class="container-list" id="container-list">
       <li>{punto1}</li>
       <li>{punto2}</li>
@@ -107,6 +107,8 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplega
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 550px;
   }
 	.menu-info {
 		display: flex;
@@ -197,6 +199,9 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplega
     .menu-info {
       flex-direction: row;
     }
+    .why h2 {
+      font-size: 2.8rem;
+    }
     .btn-menu:nth-child(1) {
       margin-right: 35px;
     }
@@ -253,24 +258,3 @@ const { title, punto1, punto2, punto3, punto4, punto5, punto6, img, infoDesplega
     }
   }
 </style>
-
-<!-- Scripts -->
-<script>
-  const uno = document.getElementById("uno");
-  const dos = document.getElementById("dos");
-  const parte1 = document.getElementById("parte-1");
-  const parte2 = document.getElementById("parte-2");
-
-  dos.addEventListener('click', function (){
-    parte1.classList.remove("view");
-    parte2.classList.add("view");
-    uno.classList.remove("select");
-    dos.classList.add("select");
-  });
-  uno.addEventListener('click', function () {
-    parte1.classList.add("view");
-    parte2.classList.remove("view");
-    uno.classList.add("select");
-    dos.classList.remove("select");
-  });
-</script>

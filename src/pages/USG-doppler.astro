@@ -7,19 +7,14 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import ultrasonido2 from "../img/servicio/usg-doppler/ultrasonido-2.jpg";
-import img1 from "../img/servicio/usg-doppler/Imagen1.jpg"
-import img2 from "../img/servicio/usg-doppler/Imagen2.png"
-import img3 from "../img/servicio/usg-doppler/Imagen3.jpg"
-import img4 from "../img/servicio/usg-doppler/Imagen4.jpg"
-import img5 from "../img/servicio/usg-doppler/Imagen5.jpg"
 import Testimonios from '../components/Testimonios.astro';
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+ 
 ---
 
 <Layout title="Ultrasonido Doppler - Dra. Janeth Adriana García Cid" description='Evaluación de algunos flujos de sangre en vasos sanguíneos del bebé (arteria cerebral media, arteria umbilical, ductus venoso) que nos hablarán del bienestar  fetal. Nos ayuda a saber si la oxigenación es adecuada para el cerebro, el corazón. Esto  nos ayudará en la toma de decisiones.'>
 	<main id="inicio">
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='¿Qué realizamos en este ultrasonido?' 
@@ -29,16 +24,16 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4=''
       punto5=''
       punto6=''
-      img={ultrasonido2}
+      img='/servicio/usg-doppler/ultrasonido-2.webp'
       infoDesplegable1='Este estudio solo deberá ser realizado por un médico especializado y altamente capacitado, como un médico materno fetal.'
       infoDesplegable2='Importante'
       />
       <Testimonios 
-        img1={img5}
-        img2={img2}
-        img3={img3}
-        img4={img4}
-        img5={img1}
+        img1='/servicio/usg-doppler/Imagen1.webp'
+        img2='/servicio/usg-doppler/Imagen2.webp'
+        img3='/servicio/usg-doppler/Imagen3.webp'
+        img4='/servicio/usg-doppler/Imagen4.webp'
+        img5='/servicio/usg-doppler/Imagen5.webp'
       />
     <Contacto2 />
 		<Ubicacion/>

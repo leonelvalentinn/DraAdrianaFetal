@@ -1,5 +1,5 @@
-<div class="button-up">
-  <a href="#"><i class="bi bi-chevron-up"></i></a>
+<div class="button-up" id="subir">
+  <a><i class="bi bi-chevron-up"></i></a>
 </div>
 
 
@@ -9,6 +9,8 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
   }
   .button-up a {
     background-color: var(--morado);
@@ -35,3 +37,24 @@
     }
   }
 </style>
+
+<script>
+  const subir = document.getElementById('subir')
+
+  subir?.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+  })
+  const y = window.scrollY
+  if (y<=90) {
+    subir.style.opacity = '0'
+  }
+  window.onscroll = () => {
+    const y = window.scrollY
+    //console.log(y)
+    if (y<=90) {
+      subir.style.opacity = '0'
+    } else {
+      subir.style.opacity = '1'
+    }
+  }
+</script>

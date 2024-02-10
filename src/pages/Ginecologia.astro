@@ -6,22 +6,21 @@ import Ubicacion from '../components/Ubicacion.astro';
 import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import gine from '../img/servicio/ginecologia/ginecologia.jpg';
 import gine1 from '../img/servicio/ginecologia/ginecologia-2.png';
 import gine2 from '../img/servicio/ginecologia/ginecologia-3.jpg';
 import gine3 from '../img/servicio/ginecologia/ginecologia-4.jpg';
 import gine4 from '../img/servicio/ginecologia/ginecologia-5.webp';
 
-import Image from 'astro/components/Image.astro';
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+ 
 import { fade } from 'astro:transitions';
+import Loader from '../components/Loader.astro';
 ---
 
 <Layout 
       title="Ginecología - Dra. Janeth Adriana García Cid"
       description='La ginecología es una rama de la medicina que se especializa en la salud reproductiva de la mujer. Los profesionales de la ginecología, conocidos como ginecólogos, se centran en el estudio, diagnóstico y tratamiento de diversas condiciones médicas relacionadas con el sistema reproductor femenino. Esto incluye órganos como el útero, los ovarios, las trompas de Falopio y la vagina.'>
 	<main id="inicio" transition:animate={fade({ duration: '0.5s' })}> 
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <div class="title-img">
       <h2>Ginecología</h2>
@@ -31,7 +30,7 @@ import { fade } from 'astro:transitions';
       <hr class="subrayado">
       <h3>Consulta Ginecológica</h3>
       <div class="container-planificacion">
-        <Image width="1200" height="1200" src={gine} alt="Ginecología" class:list="ImgGine"/>
+        <img src='/servicio/ginecologia.webp' alt="Ginecología" class="ImgGine"/>
         <div>
           <h4>Atenciones en:</h4>
           <ul>
@@ -49,21 +48,21 @@ import { fade } from 'astro:transitions';
             <hr class="subrayado">
           </div>
           <div class="">
-            <Image width="1200" height="1200" src={gine1} alt="Ginecología" class:list="ImgGine"/>
+            <img src='/servicio/ginecologia-2.webp' alt="Ginecología" class="ImgGine"/>
           </div>
         </div>
         <div class="item-gine">
           <h2>Vacuna del Virus de Papiloma Humano</h2>
           <hr class="subrayado">
           <div class="">
-            <Image width="1200" height="1200" src={gine2} alt="Ginecología" class:list="ImgGine"/>
+            <img src='/servicio/ginecologia-3.webp' alt="Ginecología" class="ImgGine"/>
           </div>
         </div>
       </div>
       <h2>Métodos de Planificación Familiar </h2>
       <hr class="subrayado">
       <div class="container-planificacion reverse">
-        <Image width="1200" height="1200" src={gine3} alt="Ginecología" class:list="ImgGine implante"/>
+        <img src='/servicio/ginecologia-4.webp' alt="Ginecología" class="ImgGine implante"/>
         <div>
           <h4>Atenciones en:</h4>
           <ul>
@@ -75,7 +74,7 @@ import { fade } from 'astro:transitions';
       <h2 class="title-consulta">Cada Consulta Incluye</h2>
       <hr class="subrayado">
       <div class="container-planificacion">
-        <Image width="1200" height="1200" src={gine4} alt="Ginecología" class:list="ImgGine"/>
+        <img src='/servicio/ginecologia-5.webp' alt="Ginecología" class="ImgGine"/>
         <ul>
           <li>Revisión de Historia clínica</li>
           <li>Toma de signos vitales, talla y peso</li>
@@ -119,7 +118,7 @@ import { fade } from 'astro:transitions';
     margin-top: 20px;
   }
   .title-img {
-    background-image: url(../img/servicio/ginecologia/ginecologia-1.jpg);
+    background-image: url(/servicio/ginecologia-1.webp);
     background-position: center;
     background-size: cover;
     height: auto;

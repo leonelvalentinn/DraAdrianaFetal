@@ -1,11 +1,7 @@
----
-import Image from 'astro/components/Image.astro';
-import logo from '../img/logo-hor2.png';
----
 
 <div class="container-nav">
   <div class="navbar-mov">
-    <Image src={logo} width="600" height="600" alt='Logo Vida Prenatal' class:list="logoImg" id='logo'/>
+    <img src='/logo-hor2.webp' alt='Logo Vida Prenatal' class="logoImg" id='logo'/>
     <a id="btn-menu" class="btn-menu">
       <i class="bi bi-list"></i>
     </a>
@@ -15,17 +11,102 @@ import logo from '../img/logo-hor2.png';
     <div class="menu-desktop">
       <a href="/" class="overlay-item">Inicio</a>
       <a href="/Trayectoria" class="overlay-item">Conóceme</a>
-      <a href="/#servicios" class="overlay-item">Servicios</a>
+      <div class="dropdown">
+        <button
+          class="btn desk dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Servicios
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-caret-left"></i> Ultrasonidos Especializados
+            </a>
+            <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+              <li>
+                <a class="dropdown-item" href="/USG-11">USG Génetico de Primer Trimestre 11-14 sdg</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/USG-segundo-trimestre">USG Estructural Segundo Trimestre 18-24 sdg</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/USG-crecimiento">USG Crecimiento </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/USG-doppler">Ultrasonido Doppler</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/USG-gemelos">Ultrasonidos de Embarazos Gemelares</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/USG-3D-4D-5D">USG 3D, 4D, 5D</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/revelacion-sexo">Revelación de Sexo Fetal</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-caret-left"></i> Procedimientos
+            </a>
+            <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+              <li>
+                <a class="dropdown-item" href="/Amniocentesis">Amniocentesis</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/Biopsia-vellosidades">Biopsia De Vellosidades Coriales</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-caret-left"></i> Estudios Sanguineos Especiales
+            </a>
+            <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+              <li>
+                <a class="dropdown-item" href="/Duo-test">Duo Test</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/adn-fetal">ADN Fetal</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <i class="bi bi-caret-left"></i> Seguimiento del Embarazo
+            </a>
+            <ul class="dropdown-menu dropdown-submenu dropdown-submenu-left">
+              <li>
+                <a class="dropdown-item" href="/control-prenatal">Control Prenatal</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/embarazos-de-alto-riesgo">Embarazos de Bajo y Alto Riesgo</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/parto">Atención de Parto</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="/Cesarea">Cesárea</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <a href="/Ginecologia" class="overlay-item">Ginecología</a>
       <a href="#ubicacion" class="overlay-item">Ubicación</a>
-      <button><a href="tel:5511119365" target="_blank">5511119365</a></button>
+      <button class="button-tel"><a href="tel:5511119365" target="_blank">5511119365</a></button>
     </div>
   </div>
 </div>
 <div class="overlay-menu" id="overlay-menu">
   <a href="/" class="overlay-item">Inicio</a>
   <a href="/Trayectoria" class="overlay-item">Conóceme</a>
-  <a href="/#servicios" class="overlay-item">Servicios</a>
+  <a href="/#servicios" class="overlay-item" id="btn-close-2">Servicios</a>
   <a href="/Ginecologia" class="overlay-item">Ginecología</a>
   <a href="#ubicacion" class="overlay-item" id="btn-close-1">Ubicación</a>
   <a href="tel:5511119365" class="overlay-item">5511119365</a>
@@ -41,6 +122,36 @@ import logo from '../img/logo-hor2.png';
 
 <!--Estilos-->
 <style>
+  .dropdown-menu li {
+    position: relative;
+  }
+  .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    border: 2px var(--rosa) solid;
+  }
+  .dropdown-item:hover {
+    background-color: var(--verde-agua-claro);
+    transition: all 0.1s linear;
+  }
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
   .container-nav {
     width: 100%;
     display: flex;
@@ -126,18 +237,22 @@ import logo from '../img/logo-hor2.png';
     margin-right: 10px;
     transition: all 0.3s ease-in-out;
   }
-  .menu-desktop button a {
+  .menu-desktop .button-tel a {
     text-decoration: none;
     color: white;
   }
-  .menu-desktop button {
+  .menu-desktop .button-tel {
     border-style: none;
     background-color: var(--rosa);
     border-radius: 15px;
     padding: 5px 10px 5px 10px;
     margin-right: 10px;
   }
-  .menu-desktop button:hover {
+  .menu-desktop .desk:hover {
+    background-color: var(--rosa-claro);
+    transition: all 0.5s linear;
+  }
+  .menu-desktop .button-tel:hover {
     background-color: var(--morado);
     transition: all 0.5s linear;
   }
@@ -187,10 +302,14 @@ import logo from '../img/logo-hor2.png';
       font-size: 18px;
       font-weight: bold;
     }
-    .menu-desktop button a {
+    .menu-desktop .desk {
+      font-size: 18px !important;
+      font-weight: bold !important;
+    }
+    .menu-desktop .button-tel a {
       font-size: 20px;
     }
-    .menu-desktop button {
+    .menu-desktop .button-tel {
       padding: 10px 15px 10px 15px;
       border-radius: 20px;
       transition: all 0.5s linear;
@@ -214,12 +333,14 @@ import logo from '../img/logo-hor2.png';
 
 <!--Scripts-->
 <script>
-  const open = document.getElementById("btn-menu");
-  open.addEventListener('click', openMenu);
-  const close = document.getElementById("btn-close");
-  close.addEventListener('click', closeMenu);
+  const abrir = document.getElementById("btn-menu");
+  abrir.addEventListener('click', openMenu);
+  const cerrar = document.getElementById("btn-close");
+  cerrar.addEventListener('click', closeMenu);
   const closeM = document.getElementById("btn-close-1");
   closeM.addEventListener('click', closeMenu);
+  const closeMe = document.getElementById("btn-close-2");
+  closeMe.addEventListener('click', closeMenu);
   function openMenu() {
     document.getElementById("overlay-menu").style.width = "100%";
     document.getElementById("btn-menu").style.display = "none";

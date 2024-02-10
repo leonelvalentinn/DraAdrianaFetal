@@ -7,19 +7,14 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import D5 from "../img/servicios/usg-5d.webp";
-import ultrasonido1 from "../img/servicio/usg-4d/ultrasonido-1.jpg";
-import img1 from "../img/servicio/usg-4d/Imagen1.png";
-import img2 from "../img/servicio/usg-4d/Imagen2.jpg";
-import img3 from "../img/servicio/usg-4d/Imagen3.jpg";
-import img5 from "../img/servicio/usg-4d/Imagen5.jpg";
 import Testimonios from '../components/Testimonios.astro';
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+
 ---
 
 <Layout title="Ultrasonido 3D, 4D, 5D - Dra. Janeth Adriana García Cid" description='Tecnología  de última vanguardia que nos permite definir de manera más clara características de tu bebé, sabemos  lo importante que es  para ti conocer la carita de tu bebé por lo que a través de esta tecnologías con ultrasonidos de ultima generación nos permitirá conocer de mejor manera las facciones de tu bebé, que estamos seguros te enamorarán.'>
 	<main id="inicio">
-    <ViewTransitions  />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='Qué evalúa esta tecnología?' 
@@ -29,16 +24,17 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4=''
       punto5=''
       punto6=''
-      img={D5}
+      img='/servicios/usg-5d.webp'
       infoDesplegable1=''
       infoDesplegable2=''
+      transition='USG'
     />
     <Testimonios 
-      img1={img1}
-      img2={img2}
-      img3={img3}
-      img4={ultrasonido1}
-      img5={img5}
+      img1='/Imagen1.webp'
+      img2='/Imagen2.webp'
+      img3='/Imagen3.webp'
+      img4='/ultrasonido-1.webp'
+      img5='/Imagen5.webp'
     />
     <Contacto2 />
 		<Ubicacion/>

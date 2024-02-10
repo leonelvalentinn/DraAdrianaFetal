@@ -1,13 +1,4 @@
----
-import instalacion1 from '../img/instalacion-2.jpg';
-import instalacion2 from "../img/instalacion-1.jpg";
-import instalacion3 from "../img/instalacion-4.jpg";
-import instalacion4 from "../img/instalacion-5.jpg";
-import instalacion5 from "../img/instalacion-6.webp";
-import instalacion6 from "../img/instalacion.jpg";
 
-import Image from "astro/components/Image.astro";
----
 <div class="title">
   <h2>CONOCE NUESTRAS INSTALACIONES</h2>
   <hr class="subrayado">
@@ -18,23 +9,23 @@ import Image from "astro/components/Image.astro";
 <section class="instalaciones">
   <div class="container-grid">
     <div class="item-galeria item-1">
-      <Image width="1200" height="1200" src={instalacion4} alt="Instalaciones" class:list="ImgIns"/>
+      <img src='/doc.jpeg' alt="Instalaciones" class="ImgIns"/>
     </div>
     <div class="item-galeria item-2">
-      <Image width="1200" height="1200" src={instalacion3} alt="Instalaciones" class:list="ImgIns"/>
+      <img src='/instalacion-8.webp' alt="Instalaciones" class="ImgIns"/>
     </div>
     <div class="item-galeria item-3">
-      <Image width="1200" height="1200" src={instalacion2} alt="Instalaciones" class:list="ImgIns"/>
+      <img src='/instalacion-1.webp' alt="Instalaciones" class="ImgIns"/>
     </div>
     <div class="item-galeria item-4">
-      <Image width="1200" height="1200" src={instalacion6} alt="Instalaciones" class:list="ImgIns"/>
+      <img src='/instalacion-9.webp' alt="Instalaciones" class="ImgIns"/>
     </div>
     <div class="item-galeria item-5">
-      <Image width="1200" height="1200" src={instalacion1} alt="Instalaciones" class:list="ImgIns"/>
+      <img src='/instalacion-10.webp' alt="Instalaciones" class="ImgIns"/>
     </div>
-    <div class="item-galeria item-6">
-      <Image width="1200" height="1200" src={instalacion5} alt="Instalaciones" class:list="ImgIns"/>
-    </div>
+    <!-- <div class="item-galeria item-6">
+      <img src='/instalacion-5.webp' alt="Instalaciones" class="ImgIns"/>
+    </div>-->
   </div>
 </section>
 
@@ -80,19 +71,18 @@ import Image from "astro/components/Image.astro";
     
   }
   .instalaciones .container-grid .item-galeria .ImgIns {
-    width: 100%;        /*Estilos normales de la imagen*/
-    margin: 15px 0 15px 0;
+    width: 100%;        /*Estilos normales de la imgn*/
     border-radius: 40px;
     height: -webkit-fill-available;
 
-    view-timeline-name: --image;       /* Este es el nombre enlazado al scroll para revisar si se mueve*/
+    view-timeline-name: --img;       /* Este es el nombre enlazado al scroll para revisar si se mueve*/
     view-timeline-axis: block;        /* este dice que eje va a mirar block (vertical) o inline(horizontal)*/
-    animation-timeline: --image;      /* Enlace entre el scroll y el elemento con el nomnbre del timeline */
+    animation-timeline: --img;      /* Enlace entre el scroll y el elemento con el nomnbre del timeline */
     animation-name: show;             /* NOmbre de la animacion que vamos a usar */
-    animation-range: entry 25% cover 45%; /* usamos esta para cambiar el rango de cuando debe empezar la animación (entry) y que termine la animacion cuando le indiquemos (cover) */
+    animation-range: entry 25% cover 40%; /* usamos esta para cambiar el rango de cuando debe empezar la animación (entry) y que termine la animacion cuando le indiquemos (cover) */
     animation-fill-mode: both;         /* Se utiliza para decir que la animacion se haga en los dos sentidos, modo en el que debe de rellenar */
   }
-  @keyframes show {   /*Animacion de la imagen primero es transparente al25}% del tamaño y va creciendo */
+  @keyframes show {   /*Animacion de la imgn primero es transparente al25}% del tamaño y va creciendo */
     from {
       opacity: 0;
       scale: 25%;
@@ -109,19 +99,19 @@ import Image from "astro/components/Image.astro";
       grid-template-columns: repeat(3, 1fr);
     }
     .instalaciones .container-grid .item-galeria .ImgIns {
-      height: -webkit-fill-available;
+      height: auto;
     }
     .instalaciones .container-grid .item-1 {
       grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column-end: 4;
     }
     .instalaciones .container-grid .item-2 {
       grid-column-start: 1;
       grid-column-end: 3;
     }
     .instalaciones .container-grid .item-3 {
-      grid-row-start: 1;
-      grid-row-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4;
       grid-column-start: 3;
     }
     .instalaciones .container-grid .item-4 {

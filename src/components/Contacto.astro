@@ -8,7 +8,7 @@
       <h3>LUNES A DOMINGO</h3>
       <h3>8:00hrs a 20:00hrs</h3>
       <h3>5511119365</h3>
-      <div>
+      <div class="botones">
         <a href="tel:5511119365" target="_blank"><button>AGENDAR CITA</button></a>
         <a href="https://wa.me/525511119365?text=Buenas tardes, solicito información sobre " target="_blank"><button>ENVIAR MENSAJE</button></a>
       </div>
@@ -18,13 +18,19 @@
 
 <!--Estilos -->
 <style>
+  .botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 6%;
-    background-image: url(../img/bg-contacto.jpg);
+    background-image: url(/bg-contacto.webp);
     background-position: center;
     background-size: cover;
     margin-top: 20px;
@@ -62,7 +68,7 @@
     text-decoration: none;
   }
   .contacto a[href="tel:5511119365"] {
-    margin-right: 10px;
+    margin-bottom: 10px;
   }
   .contacto button {
     padding: 12px 16px;
@@ -79,6 +85,16 @@
   @media (min-width: 768px) {
     .contacto {
       height: 450px;
+    }
+    .botones {
+      flex-direction: row;
+    }
+    .contacto a[href="tel:5511119365"] {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+    .parallax-content {
+      backdrop-filter: blur(15px);
     }
   }
 </style>

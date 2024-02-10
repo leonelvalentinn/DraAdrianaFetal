@@ -1,22 +1,3 @@
----
-import usg11 from "../img/servicios/usg_11semanas.png";
-import usg2 from "../img/servicios/usg-segundo.jpg";
-import usgC from "../img/servicios/usg-crecimiento.jpg";
-import usgD from "../img/servicios/ultrasonido-doppler.jpg";
-import usgG from "../img/servicios/ultrasonido-gemelos.jpg";
-import D5 from "../img/servicios/usg-5d.webp";
-import revelacion from "../img/servicios/revelacion.jpg";
-import procedimientos from "../img/procedimientos.jpg";
-import adn from "../img/adn.jpg";
-import biopsia from "../img/biopsia-corion.jpg";
-import control from "../img/servicios/control-prenatal.png";
-import prueba from "../img/prueba.jpg";
-import riesgo from "../img/servicios/embarazo-riesgo.jpg";
-import parto from "../img/servicios/parto.jpg";
-import cesarea from "../img/servicios/Cesarea.jpg";
-
-import Image from "astro/components/Image.astro";
----
 
 <div class="title" id="servicios">
   <h2 style="color: var(--morado-title); text-align: center;">SERVICIOS</h2>
@@ -27,47 +8,47 @@ import Image from "astro/components/Image.astro";
   <div class="container-grid">
     <div class="item-servicio parte-2">
       <h3>USG Génetico de Primer Trimestre 11-14 sdg</h3>
-      <Image width="1200" height="1200" src={usg11} alt="bebé" class:list="ImgBebe" />
+      <img src='/servicios/usg_11semanas.webp' alt="bebé" class="ImgBebe" transition:name="semana"/>
       <p>Evaluar el riesgo de síndrome de Down, así como determinar el riesgo de preeclampsia, restricción de crecimiento fetal y parto pretérmino.</p>
       <a href="/USG-11"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-3">
       <h3>USG Estructural Segundo Trimestre 18-24 sdg</h3>
-      <Image width="1200" height="1200" src={usg2} alt="bebé" class:list="ImgBebe" />
+      <img src='/servicios/usg-segundo.webp' alt="bebé" class="ImgBebe" transition:name="segundoTri"/>
       <p>Evaluar a detalle que todos los órganos del bebé se hayan formados adecuadamente, ayuda a descartar malformaciones fetales.</p>
       <a href="/USG-segundo-trimestre"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-4">
       <h3>USG Crecimiento</h3>
-      <Image width="1200" height="1200" src={usgC} alt="bebé" class:list="ImgBebe" />
+      <img   src='/servicios/usg-crecimiento.webp' alt="bebé" class="ImgBebe" />
       <p>Determinar que el bebé vaya creciendo de forma adecuada para la edad gestacional. </p>
       <a href="/USG-crecimiento"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-5">
       <h3>Ultrasonido Doppler</h3>
-      <Image width="1200" height="1200" src={usgD} alt="bebé" class:list="ImgBebe" />
+      <img   src='/servicios/ultrasonido-doppler.webp' alt="bebé" class="ImgBebe" />
       <p>Evaluación de algunos flujos de sangre en vasos sanguíneos del bebé que nos hablarán del bienestar fetal.</p>
       <a href="/USG-doppler"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-">
       <h3>Ultrasonidos de Embarazos Gemelares</h3>
-      <Image width="1200" height="1200" src={usgG} alt="bebé" class:list="ImgBebe" />
+      <img   src='/servicios/ultrasonido-gemelos.webp' alt="bebé" class="ImgBebe" />
       <p></p>
       <a href="/USG-gemelos"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-">
       <h3>USG 3D, 4D, 5D</h3>
-      <Image width="1200" height="1200" src={D5} alt="bebé" class:list="ImgBebe" />
+      <img src='/servicios/usg-5d.webp' alt="bebé" class="ImgBebe" transition:name="USG"/>
       <p>A través de la más alta tecnología permite obtener imágenes más claras y nítidas de tu bebé, en cual conocerás a detalle facciones faciales de tu bebé que estamos seguros te enamorarán. </p>
       <a href="/USG-3D-4D-5D"><button>Conoce más</button></a>
     </div>
     <div class="parte-6">
       <div class="item-servicio parte-66">
         <h3>Revelación de Sexo Fetal</h3>
-        <Image width="1200" height="1200" src={revelacion} alt="bebé" class:list="ImgBebe" />
+        <img src='/servicios/revelacion.webp' alt="bebé" class="ImgBebe" transition:name="Revelacion"/>
         <p></p>
         <a href="/revelacion-sexo"><button>Conoce más</button></a>
-      </div>
+      </div> 
     </div>
   </div>
 </section>
@@ -77,13 +58,13 @@ import Image from "astro/components/Image.astro";
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Amniocentesis</h3>
-      <Image width="1200" height="1200" src={procedimientos} alt="bebé" class:list="ImgBebe" transition:name="Img"/>
+      <img src='/procedimientos.webp' alt="bebé" class="ImgBebe" transition:name="Amnio"/>
       <p></p>
       <a href="/Amniocentesis"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>Biopsia De Vellosidades Coriales</h3>
-      <Image width="1200" height="1200" src={biopsia} alt="bebé" class:list="ImgBebe" />
+      <img   src='/biopsia-corion.webp' alt="bebé" class="ImgBebe" />
       <p></p>
       <a href="/Biopsia-vellosidades"><button>Conoce más</button></a>
     </div>
@@ -95,13 +76,13 @@ import Image from "astro/components/Image.astro";
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Duo Test</h3>
-      <Image width="1200" height="1200" src={prueba} alt="bebé" class:list="ImgBebe" />
+      <img src='/prueba.webp' alt="bebé" class="ImgBebe"/>
       <p>Marcadores bioquímicos séricos.</p>
       <a href="/Duo-test"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>ADN Fetal</h3>
-      <Image width="1200" height="1200" src={adn} alt="bebé" class:list="ImgBebe" />
+      <img   src='/adn.webp' alt="Adn" class="ImgBebe" />
       <p>Conocer si existe la posibilidad de presentar alguna alteración genética fetal durante el embarazo a través de una muestra sanguínea materna.</p>
       <a href="/adn-fetal"><button>Conoce más</button></a>
     </div>
@@ -113,25 +94,25 @@ import Image from "astro/components/Image.astro";
   <div class="container-grid">
     <div class="item-servicio parte-1">
       <h3>Control Prenatal</h3>
-      <Image width="1200" height="1200" src={control} alt="bebé" class:list="ImgBebe" />
+      <img src='/servicios/control-prenatal.webp' alt="bebé" class="ImgBebe" />
       <p></p>
       <a href="/control-prenatal"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-2">
       <h3>Embarazos de Bajo <br> y Alto Riesgo</h3>
-      <Image width="1200" height="1200" src={riesgo} alt="bebé" class:list="ImgBebe" />
+      <img src='/servicios/embarazo-riesgo.webp' alt="bebé" class="ImgBebe" transition:name="Riesgo"/>
       <p></p>
       <a href="/embarazos-de-alto-riesgo"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-3">
       <h3>Atención de Parto</h3>
-      <Image width="1200" height="1200" src={parto} alt="bebé" class:list="ImgBebe" />
+      <img   src='/servicios/parto.webp' alt="bebé" class="ImgBebe" />
       <p></p>
       <a href="/parto"><button>Conoce más</button></a>
     </div>
     <div class="item-servicio parte-4">
       <h3>Cesárea</h3>
-      <Image width="1200" height="1200" src={cesarea} alt="bebé" class:list="ImgBebe" />
+      <img   src='/servicios/Cesarea.webp' alt="Cesarea" class="ImgBebe" />
       <p></p>
       <a href="/Cesarea"><button>Conoce más</button></a>
     </div>

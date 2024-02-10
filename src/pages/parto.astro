@@ -8,12 +8,13 @@ import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
 import parto1 from "../img/servicio/parto/parto-1.jpg";
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+ 
 ---
 
 <Layout title="Atención de Parto - Dra. Janeth Adriana García Cid" description='El término parto respetado hace referencia  hacia el respeto a los derechos de las madres en el momento del nacimiento.'>
 	<main id="inicio">
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='¡Tienes derecho a un nacimiento humanizado!' 
@@ -23,7 +24,7 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4='❤ Se debe informar sobre las distintas intervenciones médicas que pueden tener lugar durante el parto y postparto.' .
       punto5='❤ Cada mujer tiene derecho al apego inmediato con su bebé, es decir al contacto piel a piel con su madre desde el primer momento, siempre que el recién nacido no requiera de cuidados especiales. De esta manera se crea el primer vínculo de amor.' 
       punto6='❤ Pinzamiento tardío del cordón.'
-      img={parto1}
+      img='/servicio/parto-1.webp'
       infoDesplegable1='Debe ser informada, desde el embarazo, sobre los beneficios de la lactancia materna y recibir apoyo para amamantar.'      
       infoDesplegable2=''
     >
@@ -41,5 +42,10 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
     color: var(--morado-title);
     text-align: center;
     font-weight: bolder;
+  }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 2.3rem;
+    }
   }
 </style>

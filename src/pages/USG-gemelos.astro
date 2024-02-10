@@ -7,19 +7,14 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import img1 from "../img/servicio/usg-gemelar/ultrasonido-3.jpg"
-import ultrasonido1 from "../img/servicio/usg-gemelar/ultrasonido-1.jpg";
-import ultrasonido2 from "../img/servicio/usg-gemelar/ultrasonido-2.jpg";
-import img3 from "../img/servicio/usg-gemelar/Imagen3.jpg"
-import img4 from "../img/servicio/usg-gemelar/Imagen4.jpg"
-import img5 from "../img/servicio/usg-gemelar/Imagen5.jpg"
 import Testimonios from '../components/Testimonios.astro';
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+ 
 ---
 
 <Layout title="USG de Embarazos Gemelares - Dra. Janeth Adriana García Cid" description=' Evaluación de la corionicidad, es decir  si se trata de un  embarazo gemelar con una placenta  en la que ambos gemelos la comparten o bien dos placentas, una para cada gemelo, ya que de acuerdo a ello será la vigilancia en estos embarazos'>
 	<main id="inicio">
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='¿Qué se realiza en el ultrasonido de estos embarazos?' 
@@ -29,16 +24,16 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4=''
       punto5=''
       punto6=''
-      img={img1}
+      img='/servicio/usg-gemelar/ultrasonido-3.webp'
       infoDesplegable1='Todas las pacientes con embarazos gemelares deben ser evaluadas por un médico especializado y altamente capacitado, como un médico materno fetal'.
       infoDesplegable2='Importante'
     />
     <Testimonios 
-      img1={ultrasonido1}
-      img2={ultrasonido2}
-      img3={img3}
-      img4={img4}
-      img5={img5}
+      img1='/servicio/usg-gemelar/ultrasonido-1.webp'
+      img2='/servicio/usg-gemelar/ultrasonido-2.webp'
+      img3='/servicio/usg-gemelar/Imagen3.webp'
+      img4='/servicio/usg-gemelar/Imagen4.webp'
+      img5='/servicio/usg-gemelar/Imagen5.webp'
     />
     <Contacto2 />
 		<Ubicacion/>

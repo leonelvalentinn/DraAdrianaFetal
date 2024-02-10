@@ -8,12 +8,13 @@ import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
 import riesgo from "../img/servicios/embarazo-riesgo.jpg";
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+ 
 ---
 
 <Layout title="Embarazos de Bajo y Alto Riesgo - Dra. Janeth Adriana García Cid" description='Es aquel que tiene más posibilidades de complicaciones, tanto desde el punto de vista de la madre como para él bebe, y por lo tanto merece un control más estricto durante el transcurso de la gestación, parto y postparto.'>
 	<main id="inicio">
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='¿Qué es un embarazo de alto riesgo?'  
@@ -23,9 +24,10 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4=''
       punto5=''
       punto6=''
-      img={riesgo}
+      img='/servicios/embarazo-riesgo.webp'
       infoDesplegable1=''
       infoDesplegable2=''
+      transition='Riesgo'
     >
     <h4>¿Cuáles son algunos de los factores que hacen que un embarazo sea de alto riesgo?</h4>
     <div class="container-list">

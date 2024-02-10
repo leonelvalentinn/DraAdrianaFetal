@@ -7,15 +7,15 @@ import RedesFlotantes from '../components/RedesFlotantes.astro';
 import Servicio from '../components/Servicio.astro';
 import Up from '../components/Up.astro';
 import Contacto2 from '../components/Contacto2.astro';
-import procedimientos from "../img/procedimientos.jpg";
-import ViewTransitions from 'astro/components/ViewTransitions.astro';
+import Loader from '../components/Loader.astro';
+ 
 ---
 
 <Layout 
-      title="Amniocentesis - Dra. Janeth Adriana García Cid"
-      description='Es una prueba en la que realizamos una punción abdominal en el vientre materno para poder llegar hasta el útero y obtener una muestra del líquido amniótico, el cual se analiza para el diagnóstico de enfermedades de los cromosomas como síndrome de Dawn. Esta prueba la realizamos guiados por ultrasonido'>
+    title="Amniocentesis - Dra. Janeth Adriana García Cid"
+    description='Es una prueba en la que realizamos una punción abdominal en el vientre materno para poder llegar hasta el útero y obtener una muestra del líquido amniótico, el cual se analiza para el diagnóstico de enfermedades de los cromosomas como síndrome de Dawn. Esta prueba la realizamos guiados por ultrasonido'>
 	<main id="inicio">
-    <ViewTransitions />
+    <Loader />
 		<NavbarMovil/>
     <Servicio 
       title='¿En qué consiste esta prueba?' 
@@ -25,9 +25,10 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro';
       punto4='❤ La amniocentesis es una prueba de diagnóstico, es decir, indica si su bebé tiene un problema de salud específico.' 
       punto5=''
       punto6='' 
-      img={procedimientos}
+      img='/procedimientos.webp'
       infoDesplegable1='Esta prueba solo deberá ser realizado por un médico especializado y altamente capacitado, como un médico materno fetal.'
       infoDesplegable2='Importante'
+      transition='Amnio'
     />
     <Contacto2 />
 		<Ubicacion/>

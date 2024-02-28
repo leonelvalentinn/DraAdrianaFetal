@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarMovil from '../components/NavbarMovil.astro'
+import Footer from '../components/Footer.astro';
+import Contacto from '../components/Contacto.astro';
+import Ubicacion from '../components/Ubicacion.astro';
+import RedesFlotantes from '../components/RedesFlotantes.astro';
+import Up from '../components/Up.astro';
+import Loader from '../components/Loader.astro'
+--- 
+
+<Layout 
+	title="Promociones | Vida Prenatal"
+	description='Aprovecha nuestras promociones exclusivas diseñadas para brindarte el mejor cuidado tanto a ti como a tu bebé. Nos enorgullece ofrecer ofertas especiales que te permitirán acceder a servicios odontológicos de calidad a precios accesibles, asegurando así la salud bucal de toda la familia. ¡No te pierdas la oportunidad de aprovechar estos beneficios y cuidar de ti y de tu bebé de la mejor manera posible!'>
+	<main id="inicio">
+		<Loader />
+		<NavbarMovil/>
+		<section class="container-promos">
+      <h1>Aprovecha nuestras promociones exclusivas.</h1>
+      <hr>
+      <div class="grid-promos">
+        <article class="item-promo">
+          <a href="https://wa.me/525511119365?text=Buenas tardes, solicito información sobre " target="_blank" rel="noopener noreferrer"><img src="/promo-1.webp" alt="Promoción Ultrasonido Estructural"></a>
+          <a href="https://wa.me/525511119365?text=Buenas tardes, solicito información sobre " target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Agenda tu cita</a>
+        </article>
+        <article class="item-promo">
+          <a href="https://wa.me/525511119365?text=Buenas tardes, solicito información sobre " target="_blank" rel="noopener noreferrer"><img src="/promo-2.webp" alt="Promoción Ultrasonido Estructural 18-24 Semanas"></a>
+          <a href="https://wa.me/525511119365?text=Buenas tardes, solicito información sobre " target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Agenda tu cita</a>
+        </article>
+      </div>
+    </section>
+		<Contacto/>
+		<Ubicacion/>
+		<RedesFlotantes/>
+		<Up />
+		<Footer/>
+	</main>
+</Layout>
+
+<style>
+  .container-promos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 35px 0;
+
+    & hr {
+      border: 2px solid;
+      width: 70%;
+      color: blueviolet;
+      margin: 0 0 10px 0;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    & h1 {
+      color: var(--morado-title);
+      text-align: center;
+      font-weight: bolder;
+    }
+
+    & .grid-promos {
+      display: grid;
+      place-content: center;
+      place-items: center;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      max-width: 1280px;
+      padding: 0 1rem;
+      gap: 20px;
+
+      & .item-promo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        & img {
+          width: 100%;
+          border-radius: 10px;
+        }
+
+        & a:nth-last-child(1) {
+          padding: 10px 15px;
+          border-radius: 5px;
+          background-color: var(--rosa-claro);
+          text-decoration: none;
+          color: white;
+          margin-top: 15px;
+          transition: all 0.2s linear;
+
+          & i {
+            color: white;
+          }
+        }
+        & a:nth-last-child(1):hover {
+          transition: all 0.2s linear;
+          transform: scale(1.1);
+        }
+      }
+    }
+  } 
+
+  @media (min-width: 768px) {
+    .container-promos {
+    margin: 45px 0;
+
+    & hr {
+      margin-bottom: 45px;
+    }
+
+    & .grid-promos {
+      grid-template-columns: repeat(2, minmax(350px, 450px));
+      gap: 40px;
+
+      & .item-promo {
+
+        & img {
+          transition: all 0.2s linear;
+        }
+
+        & img:hover {
+          transition: all 0.2s linear;
+          transform: rotate(3deg);
+        }
+
+        & a:nth-last-child(2):hover ~ a {
+          transform: scale(1.1);
+      }
+    }
+  } 
+  }
+</style>

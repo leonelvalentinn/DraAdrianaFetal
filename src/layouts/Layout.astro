@@ -30,7 +30,7 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWFPXNJDFT"></script>
-		<script>
+		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
@@ -38,7 +38,7 @@ const { title, description } = Astro.props;
 			gtag('config', 'G-YWFPXNJDFT');
 		</script>
 		<!-- Meta Pixel Code -->
-		<script>
+		<script is:inline>
 			!function(f,b,e,v,n,t,s)
 			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 			n.callMethod.apply(n,arguments):n.queue.push(arguments)};

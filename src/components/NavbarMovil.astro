@@ -236,7 +236,8 @@
   .menu-desktop .overlay-item {
     text-decoration: none;
     color: black;
-    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
     transition: all 0.3s ease-in-out;
   }
   .menu-desktop .button-tel a {
@@ -262,9 +263,7 @@
   }
   .menu-desktop .overlay-item:hover {
     transition: all 0.3s ease-in-out;
-    padding: 10px;
     background-color: var(--rosa-claro);
-    border-radius: 10px;
   }
   /*Keyframes */
   @keyframes open {   /*Animacion de la imagen primero es transparente al25}% del tamaño y va creciendo */
@@ -284,7 +283,7 @@
       height: auto;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .menu-desktop {
       display: flex;
     }
@@ -296,18 +295,8 @@
       max-width: 230px;
       height: auto;
     }
-  }
-  @media (min-width: 1024px) {
     .menu-desktop {
       justify-content: space-evenly;
-    }
-    .menu-desktop .overlay-item {
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .menu-desktop .desk {
-      font-size: 18px !important;
-      font-weight: bold !important;
     }
     .menu-desktop .button-tel a {
       font-size: 20px;
@@ -320,17 +309,25 @@
     .navbar-mov {
       justify-content: space-between;
     }
+  }
+  @media (min-width: 1270px) {
+    .navbar-mov {
+      padding: 0 30px 0 30px;
+    } 
     .navbar-mov .logoImg {
       max-width: 350px;
       height: auto;
       margin-left: 10px;
       padding: 0 30px;
     }
-  }
-  @media (min-width: 1100px) {
-    .navbar-mov {
-      padding: 0 30px 0 30px;
-    } 
+    .menu-desktop .overlay-item {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .menu-desktop .desk {
+      font-size: 18px !important;
+      font-weight: bold !important;
+    }
   }
 </style>
 
